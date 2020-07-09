@@ -43,18 +43,18 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 1em 4em;
+    margin: 0 4em;
   }
 
   h1 {
     font-weight: bold;
-    font-size: calc(8em + (10 - 8) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(6em + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
     margin: 2rem 0 1rem;
   }
 
   p {
     font-size: 1.7em;
-    font-size: calc(1.4em + (1.7 - 1.4) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(1.1em + (1.7 - 1.1) * ((100vw - 320px) / (1920 - 320)));
     line-height: 1.4em;
     margin: 0;
   }
