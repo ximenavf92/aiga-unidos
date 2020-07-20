@@ -61,7 +61,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 0 4em;
+    margin: 0 2em;
     display: grid;
   }
 
@@ -106,7 +106,7 @@
 
   p {
     font-size: 1.7em;
-    font-size: calc(1.1em + (8 - 1.1) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(1.05em + (8 - 1.05) * ((100vw - 320px) / (1920 - 320)));
     line-height: 1.6;
     margin: 0;
   }
