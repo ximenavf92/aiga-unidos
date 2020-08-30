@@ -1,0 +1,29 @@
+{ 
+    "socials": [
+        {
+            "name": "facebook",
+            "famod": "-square",
+            "url": "https://www.facebook.com/AIGAUnidos/"
+        },
+        {
+            "name": "instagram",
+            "famod": "",
+            "url": "https://www.instagram.com/AIGAUnidos/"
+        },
+        {
+            "name": "linkedin",
+            "famod": "",
+            "url": "https://www.linkedin.com/company/AIGAUnidos/"
+        },
+        {
+            "name": "twitter",
+            "famod": "",
+            "url": "https://twitter.com/AIGAUnidos"
+        },
+        {
+            "name": "spotify",
+            "famod": "",
+            "url": "https://open.spotify.com/user/kl3xlvmydtkefmecqbb2bfmhr?si=fZ3isXBYSHCv3ct4nTMYiw"
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{% extends "layouts/base.html" %} 
+
+{% block content %}
+
+    <section class="hero">
+        <h1><span class="sr-only">AIGA Unidos</span>
+        <img src="{{ hero.image }}" alt="{{ hero.imgalt }}"></h1>
+        <article class="mission-social">
+            <h2>{{ hero.tagline }}</h2>
+            <p class="mission-en">{{ hero.missionen }}</p>
+            <p class="mission-es">{{ hero.missiones }}</p>
+            <ul class="social-links">
+                {% for socials in social.socials %}
+                <li>
+                    <a href="{{ socials.url }}" target="_blank" rel="noopener">
+                        <span class="sr-only">follow us on {{ socials.name }}</span>
+                        <i class="fa fa-{{ socials.name }}{{ socials.famod }}" aria-hidden="true"></i>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul><!-- End Social Block -->
+        </article>
+    </section>
+
+    <section class="section-margin" id="hispanic-heritage-talks">
+        <div class="hht--info">
+            <h2>{{ hht20.heading }}</h2>
+            <p class="hht20--info-dates"><i class="fa fa-calendar" aria-hidden="true"></i> {{ hht20.date }}</p>
+            <p class="hht20--info-description">{{ hht20.description }}</p>
+            <ul>
+            </ul>
+            <li><a href="{{ hht20.buttons[0].url }}">{{ hht20.buttons[0].text }}</a></li>
+            <li><a href="{{ hht20.buttons[1].url }}">{{ hht20.buttons[1].text }}</a></li>
+        </div>
+        <div class="hht--images">
+            <img src="{{ hht20.images[0].image }}" alt="" class="hht--img1">
+            <img src="{{ hht20.images[1].image }}" alt="" class="hht--img2">
+            <img src="{{ hht20.images[2].image }}" alt="" class="hht--img3">
+        </div>
+    </section>
+
+    <section class="section-margin" id="speakers">
+        <h2>Speakers</h2>
+        <ul class="speakers-grid">
+            {% for speakers in collections.speakers %}
+                <li>
+                <article class="speakers-grid--card">
+                    <figure class="speakers-grid--card-headshot">
+                        <img src="{{ speakers.data.image }}" alt="">
+                    </figure>
+                    <h3 class="speakers-grid--name"><a href="{{ speakers.url }}">{{ speakers.data.name }}</a></h3>
+                    <ul class="speakers-grid--info">
+                        <li class="speakers-grid--info-title">{{ speakers.data.title }}</li>
+                        <li class="speakers-grid--info-organization">{{ speakers.data.company }}</li>
+                    </ul>
+                    <ul class="speakers-grid--social">
+                    {% for social in speakers.data.social %}
+                        <li>
+                            <a href="{{ social.url }}" target="_blank" rel="noopener">      
+                                <span class="sr-only">follow {{ speakers.data.firstname }} on {{ social.name }}</span>
+                                <i class="fa fa-{{ social.name }}{{ social.famod }}" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </article>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="section-margin" id="schedule"></section>
+
+    <section class="section-margin" id="chapters"></section>
+
+    <section class="section-margin" id="sponsors"></section>
+
+    <section class="section-margin" id="get-involved"></section>
+
+    {{ content | safe }}
+
+{% endblock %}

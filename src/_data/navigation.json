@@ -1,0 +1,20 @@
+{
+    "navitems": [
+        {
+            "title": "Hispanic Heritage Talks",
+            "link": "hispanic-heritage-talks" 
+        },
+        {
+            "title": "Speakers",
+            "link": "#speakers" 
+        },
+        {
+            "title": "Schedule",
+            "link": "schedule" 
+        },
+        {
+            "title": "Get Involved",
+            "link": "get-involved" 
+        }
+    ]
+  }
