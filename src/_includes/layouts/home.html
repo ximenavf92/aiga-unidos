@@ -23,19 +23,19 @@
 </section>
 
 <section class="section-margin" id="hispanic-heritage-talks">
-    <div class="hht--info">
+    <div class="hht20--info">
         <h2>{{ hht20.heading }}</h2>
         <p class="hht20--info-dates"><i class="fa fa-calendar" aria-hidden="true"></i> {{ hht20.date }}</p>
         <p class="hht20--info-description">{{ hht20.description }}</p>
-        <ul>
+        <ul class="button-list">
             <li><a href="{{ hht20.buttons[0].url }}" class="button">{{ hht20.buttons[0].text }}</a></li>
             <li><a href="{{ hht20.buttons[1].url }}" class="button">{{ hht20.buttons[1].text }}</a></li>
         </ul>
     </div>
-    <div class="hht--images">
-        <img src="{{ hht20.images[0].image }}" alt="" class="hht--img1">
-        <img src="{{ hht20.images[1].image }}" alt="" class="hht--img2">
-        <img src="{{ hht20.images[2].image }}" alt="" class="hht--img3">
+    <div class="hht20--images">
+        <img src="{{ hht20.images[0].image }}" alt="" class="hht20--img1">
+        <img src="{{ hht20.images[1].image }}" alt="" class="hht20--img2">
+        <img src="{{ hht20.images[2].image }}" alt="" class="hht20--img3">
     </div>
 </section>
 
@@ -48,21 +48,23 @@
                 <figure class="speakers-grid--card-headshot">
                     <img src="{{ speakers.data.image }}" alt="">
                 </figure>
-                <h3 class="speakers-grid--name"><a href="{{ speakers.url }}">{{ speakers.data.name }}</a></h3>
-                <ul class="speakers-grid--info">
-                    <li class="speakers-grid--info-title">{{ speakers.data.title }}</li>
-                    <li class="speakers-grid--info-organization">{{ speakers.data.company }}</li>
-                </ul>
-                <ul class="speakers-grid--social">
-                    {% for social in speakers.data.social %}
-                    <li>
-                        <a href="{{ social.url }}" target="_blank" rel="noopener">
-                            <span class="sr-only">follow {{ speakers.data.firstname }} on {{ social.name }}</span>
-                            <i class="fa fa-{{ social.name }}{{ social.famod }}" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
+                <div class="speakers-grid--info">
+                    <h3 class="speakers-grid--name"><a href="{{ speakers.url }}">{{ speakers.data.name }}</a></h3>
+                    <ul class="speakers-grid--details">
+                        <li class="speakers-grid--details-title">{{ speakers.data.title }}</li>
+                        <li class="speakers-grid--details-organization">{{ speakers.data.company }}</li>
+                    </ul>
+                    <ul class="speakers-grid--social">
+                        {% for social in speakers.data.social %}
+                        <li>
+                            <a href="{{ social.url }}" target="_blank" rel="noopener">
+                                <span class="sr-only">follow {{ speakers.data.firstname }} on {{ social.name }}</span>
+                                <i class="fa fa-{{ social.name }}{{ social.famod }}" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </article>
         </li>
         {% endfor %}

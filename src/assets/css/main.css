@@ -108,7 +108,7 @@ html::-webkit-scrollbar-track {
 }
 
 :target {
-  scroll-margin-top: 280px;
+  scroll-margin-top: 350px;
 }
 
 @media (min-width: 1000px) {
@@ -143,7 +143,7 @@ figure {
   margin-inline-end: 0;
 }
 
-/* Navigation */
+/* === Navigation === */
 .header-main {
   padding: 1.1rem 0 1.5rem;
   background-color: var(--backgroundColor);
@@ -171,7 +171,7 @@ figure {
 .header-main .nav-main ul {
   display: flex;
   font-size: .9em;
-  font-weight: bold;
+  font-weight: 600;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -204,6 +204,7 @@ figure {
 
 .header-main .nav-main :focus {
   outline: 0;
+  color: var(--primaryColor);
   border-bottom: solid 3px var(--secondaryColor); 
 }
 
@@ -215,7 +216,8 @@ figure {
   .desktop-only {display: block;}
   
   .header-main {
-    padding: 1.1rem 3rem .1rem;
+    line-height: 0;
+    padding: 1rem 3rem .75rem;
     background-color: var(--backgroundColor);
     width: 100%;
     margin: 0 0 1em;
@@ -243,23 +245,37 @@ figure {
     font-size: 1.25em;
     margin: 0;
     letter-spacing: .05em;
-    font-weight: 600;
+    font-weight: 500;
   }
   
   .header-main .nav-main ul li {
+    line-height: 1;
     margin: 0 0 0 2em;
     border-left: 0;
   }
-
+  
   .header-main .nav-main ul li a:hover {
     border-bottom: solid 3px var(--primaryColor);
     color: var(--secondaryColor);
     transition: ease-out .1s;
     
   }
+
+  .header-main.main-nav--scroll .main-nav {
+    padding: 0 3rem 0;
+  }
+  
+  .header-main.main-nav--scroll .main-nav ul li {
+    font-size: 16px
+  }
+  
+  .header-main.main-nav--scroll .main-nav h1 img {
+    width: 60%;
+  }
+   
 }
 
-main {
+main:focus {
   outline: none;
 }
 
@@ -267,6 +283,58 @@ main {
   margin: 6rem 1.5rem;
 }
 
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: calc(6em + (15 - 6) * ((100vw - 320px) / (1920 - 320)));
+}
+
+h2 {
+  font-size: calc(2em + (30 - 2) * ((100vw - 320px) / (1920 - 320)));
+}
+
+h3 {
+  font-size: calc(1.5em + (10 - 1.5) * ((100vw - 320px) / (1920 - 320)));
+}
+
+h1>img {
+  width: 80%;
+}
+
+p {
+  font-size: 1em;
+  font-size: calc(1em + (4 - 1) * ((100vw - 320px) / (1920 - 320)));
+  line-height: 1.6;
+  margin: 0;
+}
+
+.button {
+  display: block;
+  width: max-content;
+  margin: .5em 0;
+  padding: .5em .75em;
+  border-radius: .4em;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: .025em;
+  border: solid 3px var(--secondaryColor);
+  background-color: var(--secondaryColor);
+  box-shadow: 2px 2px 8px var(--supportColor-lt);
+}
+
+.button:hover {
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+}
+
+.button:focus {
+  outline: 0;
+  border: solid 3px var(--primaryColor);
+}
+
+/* === Hero === */
 .hero {
   /* height: calc(100vh - 5em); */
   display: grid;
@@ -350,26 +418,6 @@ main {
 
 }
 
-h1 {
-  font-weight: bold;
-  font-size: calc(6em + (15 - 6) * ((100vw - 320px) / (1920 - 320)));
-}
-
-h2 {
-  font-weight: bold;
-  font-size: calc(2em + (30 - 2) * ((100vw - 320px) / (1920 - 320)));
-}
-
-h1>img {
-  width: 80%;
-}
-
-p {
-  font-size: 1em;
-  font-size: calc(1em + (4 - 1) * ((100vw - 320px) / (1920 - 320)));
-  line-height: 1.6;
-  margin: 0;
-}
 
 .social-links {
   width: 100%;
@@ -430,6 +478,245 @@ p {
   }
 }
 
+/* === Hispanic Heritage Talks === */
+#hispanic-heritage-talks {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+@media (max-width: 999px) {
+  .hht20--info {
+    grid-row: 2 / 3;
+  }
+
+  .hht20--images {
+    grid-row: 1 / 2;
+    margin: -3em 0 3em;
+  }
+}
+
+#hispanic-heritage-talks h2 {
+  width: 80%;
+  margin: 0 0 .5em;
+}
+
+#hispanic-heritage-talks h2::before {
+  content: '';
+  display: block;
+  background-image: url(../images/icon-hht.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 45px;
+  margin-bottom: .35em;
+}
+
+.hht20--info-dates {
+  margin: 1.5em 0 .5em;
+  /* color: var(--primaryColor); */
+  font-weight: 600;
+}
+
+.hht20--info-dates i {
+  color: var(--accentColor);
+}
+
+.hht20--info .button-list {
+  display: flex;
+}
+
+.hht20--info .button-list li {
+  margin: 0 1em 1.5em 0;
+}
+
+.hht20--info .button-list li:nth-child(even) .button {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
+.hht20--info .button-list li:nth-child(even) .button:hover {
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+}
+
+.hht20--info .button-list li:nth-child(even) .button:focus {
+  outline: 0;
+  border: solid 3px var(--secondaryColor);
+}
+
+.hht20--images {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5em;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
+}
+
+.hht20--images img {
+  width: 100%;
+  object-fit: cover;
+  border: solid 3px var(--backgroundColor);
+}
+
+.hht20--img1 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.hht20--img2 {
+  grid-area: 1 / 2 /  4 / 5;
+}
+
+.hht20--img3 {
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+@media (min-width: 1000px) {
+  #hispanic-heritage-talks {
+    grid-template-columns: 2fr 2fr;
+    gap: 0 8em;
+  }
+
+  #hispanic-heritage-talks h2 {
+    width: 70%;
+  }
+  
+  #hispanic-heritage-talks h2::before {
+    height: 55px;
+  }
+}
+
+/* === Speakers === */
+#speakers h2 {
+  text-align: center;
+  margin: 0 auto 1.5em;
+  font-size: calc(3em + (30 - 3) * ((100vw - 320px) / (1920 - 320)));
+}
+
+#speakers h2::before {
+  content: '';
+  display: flex;
+  justify-items: center;
+  background-image: url(../images/icon-speakers.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto .25em;
+}
+
+@media (min-width: 1000px) {
+  #speakers h2::before {
+    width: 100px;
+    height: 60px;
+  }
+}
+
+/* Speaker Grid */
+.speakers-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: start;
+  gap: 1em;
+}
+
+.speakers-grid--card {
+  align-self: center;
+  align-items: center;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  gap: 0 1em;
+}
+
+.speakers-grid--card-headshot img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.speakers-grid--name {
+  margin: 0 auto .2em;
+}
+
+.speakers-grid li:nth-child(even) .speakers-grid--name a {
+  color: var(--secondaryColor);
+}
+
+.speakers-grid--name a {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+.speakers-grid--details li {
+  font-size: 14px;
+  font-size: calc(.9em + (4. - .9) * ((100vw - 320px) / (1920 - 320)));
+  margin-bottom: .2em;
+}
+
+.speakers-grid--social {
+  display: flex;
+  margin: 1em 0;
+}
+
+.speakers-grid--social li {
+  margin-right: .5em;
+  font-size: 1.2em;
+}
+
+.speakers-grid--social li a {
+  color: var(--accentColor);
+}
+
+.speakers-grid--social li a:hover {
+  outline: none;
+  border-bottom: solid 4px var(--primaryColor);
+  /* transition: ease-in-out .2s; */
+  color: var(--primaryColor);
+}
+
+.speakers-grid--social li a:hover i {
+  transition: ease-out .3s;
+  animation: .6s ease-in-out 1 shakeUp;
+}
+
+.speakers-grid--social li a:focus {
+  outline: none;
+  border-bottom: solid 4px var(--primaryColor);
+  transition: ease-in-out .3s;
+}
+
+.speakers-grid--social li a:focus i {
+  transition: ease-out .3s;
+  animation: .6s ease-in-out 1 shakeUp;
+}
+
+@media (min-width: 800px) {
+  .speakers-grid {
+    margin: 0 2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3em;
+  }
+
+  .speakers-grid--card {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 1em;
+  }
+
+  .speakers-grid--name {
+    margin: .5em auto .2em;
+  } 
+}
+
+/* === Footer === */
 .footer {
   padding: .25rem 1rem 1rem;
   background-color: var(--textColor);
@@ -441,7 +728,7 @@ p {
 .footer a {
   color: #fff;
   text-decoration-color: var(--accentColor);
-  text-decoration-thickness: 2em;
+  text-decoration-thickness: 2px;
 }
 
 .footer a:hover {

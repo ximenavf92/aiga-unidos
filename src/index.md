@@ -12,11 +12,11 @@ hht20:
   date: 'September 15th - October 15th'
   description: 'AIGA Unidos first ever event is a series of talks called Hispanic Heritage Talks, which will take place during Hispanic Heritage Month. It is a series of virtual talks featuring Latinx and Hispanic creatives from different backgrounds and disciplines. ¡Acompañanos!'
   images:
-   - image: 'assets/images/speakers/eduardo-juarez.jpg'
+   - image: 'assets/images/unidos-meet-1.jpg'
      imgalt: ''
-   - image: 'assets/images/speakers/eduardo-juarez.jpg'
+   - image: 'assets/images/unidos-meet-2.jpg'
      imgalt: ''
-   - image: 'assets/images/speakers/eduardo-juarez.jpg'
+   - image: 'assets/images/unidos-meet-3.jpg'
      imgalt: ''
   buttons:
    - text: 'Speakers'
