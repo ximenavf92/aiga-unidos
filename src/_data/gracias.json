@@ -1,0 +1,63 @@
+{ 
+    "heading": "¡Unidos hacemos la diferencia!",
+    "description": "HHT2020 has been made possible by the hard work and collaboration of the following volunteer chapters.",
+    "chapters": [
+        {
+            "name": "AIGA San Antonio",
+            "logo": "assets/images/chapters/aiga-sanantonio.svg",
+            "url": "https://www.sanantonio.aiga.org/"
+        },
+        {
+            "name": "AIGA Orlando",
+            "logo": "assets/images/chapters/aiga-orlando.svg",
+            "url": "https://www.orlando.aiga.org/"
+        },
+        {
+            "name": "AIGA Atlanta",
+            "logo": "assets/images/chapters/aiga-atlanta.svg",
+            "url": "https://www.atlanta.aiga.org/"
+        },
+        {
+            "name": "AIGA DFW",
+            "logo": "assets/images/chapters/aiga-chapter.svg",
+            "url": "https://www.dallasftworth.aiga.org/"
+        },
+        {
+            "name": "AIGA Houston",
+            "logo": "assets/images/chapters/aiga-houston.svg",
+            "url": "https://www.houston.aiga.org/"
+        },
+        {
+            "name": "AIGA Saint Louis",
+            "logo": "assets/images/chapters/aiga-stlouis.svg",
+            "url": "https://www.stlouis.aiga.org/"
+        },
+        {
+            "name": "AIGA Austin",
+            "logo": "assets/images/chapters/aiga-austin.svg",
+            "url": "https://www.austin.aiga.org/"
+        },
+        {
+            "name": "AIGA Jacksonville",
+            "logo": "assets/images/chapters/aiga-jacksonville.svg",
+            "url": "https://www.jacksonville.aiga.org/"
+        },
+        {
+            "name": "AIGA Kansas City",
+            "logo": "assets/images/chapters/aiga-kc.svg",
+            "url": "https://www.kc.aiga.org/"
+        },
+        {
+            "name": "AIGA Miami",
+            "logo": "assets/images/chapters/aiga-miami.svg",
+            "url": "https://www.miami.aiga.org/"
+        }
+        ],
+    "sponsors": [
+        {
+            "name": "Sponsor 1",
+            "logo": "assets/images/sponsors/sponsor.svg",
+            "url": "#"
+        }
+    ]
+}

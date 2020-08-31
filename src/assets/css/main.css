@@ -797,7 +797,7 @@ p {
 /* === Speakers === */
 #gracias h2 {
   text-align: center;
-  margin: 0 auto .25em;
+  margin: 0 auto .1em;
   font-size: calc(2.25em + (32 - 2.25) * ((100vw - 320px) / (1920 - 320)));
 }
 
@@ -819,10 +819,30 @@ p {
   margin: 0 auto;
 }
 
+.gracias-grid--chapters {
+  margin: 2.5em auto 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em 1em;
+}
+
 @media (min-width: 1000px) {
   #gracias h2::before {
     width: 100px;
     height: 60px;
+  }
+  
+  #gracias .gracias-description {
+    text-indent: 1em;
+  }
+
+  .gracias-grid--chapters {
+    margin: 4em auto 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2.5em 3em;
   }
 }
 /* --- Chapters --- */
@@ -830,7 +850,7 @@ p {
 /* === Get Involved === */
 #get-involved h2 {
   text-align: left;
-  margin: 3em auto 1.25em;
+  margin: 1.5em auto 1.25em;
   font-size: calc(2.5em + (22 - 2.5) * ((100vw - 320px) / (1920 - 320)));
   display: inline-flex;
   align-items: end;
@@ -869,6 +889,10 @@ p {
 }
 
 @media (min-width: 1000px) {
+  #get-involved h2 {
+    margin: 3em auto 1.25em;
+  }
+
   #get-involved form {
     grid-template-columns: repeat(2, 1fr);
     gap: 4em 2em;

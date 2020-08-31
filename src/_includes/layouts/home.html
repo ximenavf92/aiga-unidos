@@ -75,7 +75,19 @@
     <h2>Schedule</h2>
 </section>
 
-<section class="section-margin" id="chapters"></section>
+<section class="section-margin" id="gracias">
+    <h2>{{ gracias.heading }}</h2>
+    <p class="gracias-description">{{ gracias.description }}</p>
+    <ul class="gracias-grid--chapters">
+        {% for chapters in gracias.chapters %}
+        <li>
+            <a href="{{ chapters.url }}" target="_blank" rel="noopener">
+                <img src="{{ chapters.logo }}" alt="{{ chapters.name }}">
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
 
 <section class="section-margin" id="sponsors"></section>
 
@@ -113,7 +125,7 @@
             </li>
         </ul>
         <p class="get-involved--submit">
-            <button type="submit" class="button">Let's Talk!</button>
+            <button type="submit" class="button buttonPrimary">Let's Talk!</button>
         </p>
     </form>
 </section>
