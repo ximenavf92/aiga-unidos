@@ -48,16 +48,21 @@
             "url": "https://www.jacksonville.aiga.org/"
         },
         {
-            "name": "AIGA Kansas City",
-            "logo": "assets/images/chapters/aiga-kc.svg",
-            "url": "https://www.kc.aiga.org/"
-        },
-        {
             "name": "AIGA Miami",
             "logo": "assets/images/chapters/aiga-miami.svg",
             "url": "https://www.miami.aiga.org/"
+        },
+        {
+            "name": "AIGA Connecticut",
+            "logo": "assets/images/chapters/aiga-ct.svg",
+            "url": "https://www.connecticut.aiga.org/"
+        },
+        {
+            "name": "AIGA Kansas City",
+            "logo": "assets/images/chapters/aiga-kc.svg",
+            "url": "https://www.kc.aiga.org/"
         }
-        ],
+    ],
     "sponsors": [
         {
             "name": "Sponsor 1",
