@@ -1,7 +1,7 @@
 ---
 name: 'Gladys Jose'
 firstname: 'Gladys'
-title: 'Illustrator'
+title: "Children's Book Illustrator"
 image: 'assets/images/speakers/placeholder2.svg'
 social:
   - name: 'instagram'
