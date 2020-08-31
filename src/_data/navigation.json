@@ -1,20 +1,26 @@
 {
     "navitems": [
         {
-            "title": "Hispanic Heritage Talks",
-            "link": "hispanic-heritage-talks" 
+            "text": "Hispanic Heritage Talks",
+            "url": "#hispanic-heritage-talks",
+            "class": "desktop-only"
         },
         {
-            "title": "Speakers",
-            "link": "#speakers" 
+            "text": "Talks",
+            "url": "#hispanic-heritage-talks",
+            "class": "mobile-only"
         },
         {
-            "title": "Schedule",
-            "link": "schedule" 
+            "text": "Speakers",
+            "url": "#speakers" 
         },
         {
-            "title": "Get Involved",
-            "link": "get-involved" 
+            "text": "Schedule",
+            "url": "#schedule" 
+        },
+        {
+            "text": "Get Involved",
+            "url": "#get-involved" 
         }
     ]
   }

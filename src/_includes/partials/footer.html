@@ -1,0 +1,26 @@
+<footer class="footer">
+    <div class="footer--social-icons">
+        <!-- Social Block -->
+        <ul class="social-links">
+            {% for socials in social.socials %}
+            <li>
+                <a href="{{ socials.url }}" target="_blank" rel="noopener">
+                    <span class="sr-only">follow us on {{ socials.name }}</span>
+                    <i class="fa fa-{{ socials.name }}{{ socials.famod }}" aria-hidden="true"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul><!-- End Social Block -->
+    </div>
+    <div class="copyright-credits">
+        <p>&copy; 2020 AIGA Unidos&nbsp;|&nbsp;
+            <a href="https://github.com/ximenavf92/aiga-unidos" target="_blank"><i class="fa fa-github"
+                    aria-label="Github Repo"></i></a>
+            Designed &amp; coded with <a href="https://ximenavf.com/" target="_blank">&heartsuit;</a>
+        </p>
+        <p>
+            Built with <a href="https://www.11ty.dev/" target="_blank">Eleventy</a>.
+            Hosted on <a href="https://www.netlify.com/" target="_blank">Netlify
+        </p>
+    </div>
+</footer>
