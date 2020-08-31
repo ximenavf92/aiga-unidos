@@ -844,15 +844,17 @@ p {
   border-color: var(--primaryColor);
 }
 
-#get-involved .get-involved--submit {
-  grid-column: 2 / 3;
-  justify-self: end;
-}
-
-#get-involved .get-involved--checkbox .checkbox-container {
+.getinvolved-form--checkbox {
+  align-self: start;
   display: inline-flex;
   align-items: center;
   margin: 0;
+  transform: translateY(-1em);
+}
+
+.getinvolved-form--checkbox li {
+  margin: 0 2em 0 0;
+  line-height: 1.5;
 }
 
 .getinvolved-form--checkbox input[type="checkbox"] {
@@ -865,7 +867,6 @@ p {
   position: relative;
   display: inline-flex;
   align-items: center;
-  
   padding-left: 2em;
 }
 
@@ -888,8 +889,8 @@ p {
   left: 0px;
   
   /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
-   *to vertically center it.
-   */
+  *to vertically center it.
+  */
   top: .1em;
 }
 
@@ -922,6 +923,17 @@ p {
   border: var(--primaryColor) solid 3px;
 }
 
+#get-involved .get-involved--submit {
+  grid-column: 2 / 3;
+  justify-self: end;
+}
+
+@media (max-width: 999px) {
+  #get-involved .get-involved--submit {
+    margin-top: -1em;
+  }
+}
+
 #get-involved .button {
   background-color: var(--primaryColor);
   border-color: var(--primaryColor);
@@ -939,7 +951,7 @@ p {
 #get-involved .getinvolved-form--submit {
   grid-column: 1 / 3;
   justify-self: center;
-  align-self: start;
+  align-self: end;
 }
 
 @media (min-width: 1000px) {
