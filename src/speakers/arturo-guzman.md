@@ -3,7 +3,7 @@ name: 'Arturo Guzmán'
 firstname: 'Arturo'
 title: 'Designer'
 company: 'Outlook Amusements'
-image: 'assets/images/speakers/eduardo-juarez.jpg'  
+image: 'assets/images/speakers/placeholder2.svg'
 social:
   - name: 'instagram'
     famod: ''
@@ -16,5 +16,5 @@ social:
     url: 'https://www.twitter.com/kideddie/'
   - name: link
     famod: ''
-    url: 'http://eddiethecreative.com/'   
+    url: 'http://eddiethecreative.com/'
 ---

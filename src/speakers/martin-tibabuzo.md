@@ -1,0 +1,20 @@
+---
+name: 'Martin Tibabuzo'
+firstname: 'Martin'
+title: 'Creative Director'
+company: 'Peak Football'
+image: 'assets/images/speakers/placeholder2.svg'
+social:
+  - name: 'instagram'
+    famod: ''
+    url: 'https://www.instagram.com/martin.tibabuzo/'
+  - name: 'linkedin'
+    famod: ''
+    url: 'https://www.linkedin.com/in/martintibabuzo/'
+  - name: 'twitter'
+    famod: ''
+    url: 'https://www.twitter.com/martin_tibabuzo'
+  - name: 'facebook'
+    famod: ''
+    url: 'https://www.facebook.com/martin.tibabuzo/'
+---
