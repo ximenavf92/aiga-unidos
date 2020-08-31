@@ -82,6 +82,10 @@ a.skip-main:active {
   --mainFont: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ====== SCROLLBAR ====== */
 html::-webkit-scrollbar {
   --scrollbarSize: 15px;
@@ -280,7 +284,7 @@ main:focus {
 }
 
 .section-margin {
-  margin: 6rem 1.5rem;
+  margin: 3rem 1.5rem;
 }
 
 h1, h2, h3, h4 {
@@ -296,7 +300,7 @@ h2 {
 }
 
 h3 {
-  font-size: calc(1.5em + (10 - 1.5) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(1.4em + (10 - 1.4) * ((100vw - 320px) / (1920 - 320)));
 }
 
 h1>img {
@@ -322,6 +326,7 @@ p {
   border: solid 3px var(--secondaryColor);
   background-color: var(--secondaryColor);
   box-shadow: 2px 2px 8px var(--supportColor-lt);
+  cursor: pointer;
 }
 
 .button:hover {
@@ -341,7 +346,7 @@ p {
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin: .9em 1.5rem 2rem 1.5rem;
+  margin: .9em 1.5rem 5rem 1.5rem;
 }
 
 .hero img {
@@ -418,10 +423,9 @@ p {
 
 }
 
-
 .social-links {
   width: 100%;
-  margin: 3em auto 0;
+  margin: 1.5em auto 0;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -594,7 +598,7 @@ p {
 /* === Speakers === */
 #speakers h2 {
   text-align: center;
-  margin: 0 auto 1.5em;
+  margin: 0 auto 1.25em;
   font-size: calc(3em + (30 - 3) * ((100vw - 320px) / (1920 - 320)));
 }
 
@@ -645,6 +649,14 @@ p {
   margin: 0 auto .2em;
 }
 
+.speakers-grid--details-title {
+  font-weight: 600;
+}
+
+.speakers-grid--details-organization {
+  font-style: italic;
+}
+
 .speakers-grid li:nth-child(even) .speakers-grid--name a {
   color: var(--secondaryColor);
 }
@@ -662,7 +674,7 @@ p {
 
 .speakers-grid--social {
   display: flex;
-  margin: 1em 0;
+  margin: .5em 0;
 }
 
 .speakers-grid--social li {
@@ -714,7 +726,242 @@ p {
   .speakers-grid--name {
     margin: .5em auto .2em;
   } 
+
+  .speakers-grid--social {
+    margin: 1em 0;
+  }
 }
+
+/* === Schedule === */
+#schedule h2 {
+  text-align: left;
+  margin: 1em auto 1.25em;
+  font-size: calc(3em + (30 - 3) * ((100vw - 320px) / (1920 - 320)));
+  display: inline-flex;
+  align-items: end;
+}
+
+#schedule h2::before {
+  content: '';
+  display: flex;
+  justify-items: start;
+  background-image: url(../images/icon-schedule.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 55px;
+  height: 45px;
+  text-align: left;
+  margin: 0 auto .25em;
+}
+
+@media (min-width: 1000px) {
+  #schedule h2::before {
+    width: 80px;
+    height: 65px;
+  }
+}
+
+
+/* === Get Involved === */
+#get-involved h2 {
+  text-align: left;
+  margin: 1em auto 1.25em;
+  font-size: calc(2.5em + (22 - 2.5) * ((100vw - 320px) / (1920 - 320)));
+  display: inline-flex;
+  align-items: end;
+}
+
+#get-involved h2::before {
+  content: '';
+  display: flex;
+  justify-items: start;
+  background-image: url(../images/icon-getinvolved.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 40px;
+  text-align: left;
+  margin: 0 auto .25em;
+}
+
+#get-involved form {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em 0;
+}
+
+@media (max-width: 999px) {
+  .getinvolved-form--fname,
+  .getinvolved-form--lname,
+  .getinvolved-form--email,
+  .getinvolved-form--city,
+  .getinvolved-form--checkbox,
+  .getinvolved-form--submit {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (min-width: 1000px) {
+  #get-involved form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em 2em;
+  }
+
+  #get-involved .get-involved--checkbox {
+    grid-column: 1 / 2;
+  }
+}
+
+#get-involved p {
+  margin: 0;
+}
+
+#get-involved label {
+  width: 100%;
+  color: var(--main-green);
+  font-weight: bold;
+  font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+  letter-spacing: .02em;
+}
+
+#get-involved input,
+#get-involved textarea {
+  width: 100%;
+  border: none;
+  border-bottom: solid 3px var(--accentColor);
+  background: transparent;
+  font-size: calc(16px + (17 - 16) * ((100vw - 320px) / (1920 - 320)));
+  font-family: var(--body);
+  margin: 0 0 5px;
+  padding: 5px 1%;
+}
+
+#get-involved input:focus,
+#get-involved textarea:focus {
+  outline: none;
+  border-color: var(--primaryColor);
+}
+
+#get-involved .get-involved--submit {
+  grid-column: 2 / 3;
+  justify-self: end;
+}
+
+#get-involved .get-involved--checkbox .checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+}
+
+.getinvolved-form--checkbox input[type="checkbox"] {
+  opacity: 0;
+  transform: translateY(1.5em);
+  z-index: 10;
+}
+
+.getinvolved-form--checkbox label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  
+  padding-left: 2em;
+}
+
+.getinvolved-form--checkbox label::before,
+.getinvolved-form--checkbox label::after {
+  position: absolute;
+  content: "";
+  
+  /*Needed for the line-height to take effect*/
+  display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.getinvolved-form--checkbox label::before{
+  height: 20px;
+  width: 20px;
+  
+  border: solid 3px var(--accentColor);
+  border-radius:.4rem;
+  left: 0px;
+  
+  /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+   *to vertically center it.
+   */
+  top: .1em;
+}
+
+/*Checkmark of the fake checkbox*/
+.getinvolved-form--checkbox label::after {
+  height: .6em;
+  width: .6em;
+  background-color: var(--secondaryColor);
+  /* border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg); */
+  left: .35em;
+  top: .48em;
+  border-radius: .2em;
+}
+
+/*Hide the checkmark by default*/
+.getinvolved-form--checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/*Unhide on the checked state*/
+.getinvolved-form--checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.getinvolved-form--checkbox input[type="checkbox"]:focus + label::before {
+  outline: nonr;
+  border: var(--primaryColor) solid 3px;
+}
+
+#get-involved .button {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
+#get-involved .button:hover {
+  background-color: var(--backgroundColor);
+  color: var(--primaryColor);
+}
+
+#get-involved .getinvolved-form--message {
+  grid-column: 1 / 3;
+}
+
+#get-involved .getinvolved-form--submit {
+  grid-column: 1 / 3;
+  justify-self: center;
+  align-self: start;
+}
+
+@media (min-width: 1000px) {
+  #get-involved h2 {
+    margin: -.75em auto 1.25em;
+  }
+
+  #get-involved h2::before {
+  width: 70px;
+  height: 60px;
+  }
+
+  /*Checkmark of the fake checkbox*/
+.getinvolved-form--checkbox label::after {
+  height: .6em;
+  width: .6em;
+  left: .35em;
+  top: .42em;
+  border-radius: .2em;
+}
+}
+
 
 /* === Footer === */
 .footer {
