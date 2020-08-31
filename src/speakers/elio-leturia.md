@@ -1,0 +1,20 @@
+---
+name: 'Elio Leturia'
+firstname: 'Elio'
+title: 'Associate Professor of Journalism'
+company: 'Columbia College Chicago'
+image: 'assets/images/speakers/elio-leturia.jpg'
+social:
+  - name: 'instagram'
+    famod: ''
+    url: 'https://www.instagram.com/elioleturia/'
+  - name: 'linkedin'
+    famod: ''
+    url: 'https://www.linkedin.com/in/elioleturia/'
+  - name: 'twitter'
+    famod: ''
+    url: 'https://www.twitter.com/bancodevoces'
+  - name: 'facebook'
+    famod: ''
+    url: 'https://www.facebook.com/elio.leturia/'
+---
