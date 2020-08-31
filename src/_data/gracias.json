@@ -28,6 +28,11 @@
             "url": "https://www.houston.aiga.org/"
         },
         {
+            "name": "AIGA Detroit",
+            "logo": "assets/images/chapters/aiga-detroit.svg",
+            "url": "https://www.detroit.aiga.org/"
+        },
+        {
             "name": "AIGA Saint Louis",
             "logo": "assets/images/chapters/aiga-stlouis.svg",
             "url": "https://www.stlouis.aiga.org/"
