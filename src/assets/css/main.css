@@ -314,6 +314,7 @@ p {
   margin: 0;
 }
 
+/* Button Base */
 .button {
   display: block;
   width: max-content;
@@ -336,7 +337,38 @@ p {
 
 .button:focus {
   outline: 0;
-  border: solid 3px var(--primaryColor);
+  border: solid 4px var(--primaryColor);
+  border-radius: .6em;
+}
+
+/* Primary Button */
+.button.buttonPrimary {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
+.button.buttonPrimary:hover {
+  background-color: var(--backgroundColor);
+  color: var(--primaryColor);
+}
+
+.button.buttonPrimary:focus {
+  border-color: var(--secondaryColor);
+}
+
+/* Secondary Button */
+.button.buttonSecondary {
+  background-color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+}
+
+.button.buttonSecondary:hover {
+  background-color: var(--backgroundColor);
+  color: var(--secondaryColor);
+}
+
+.button.buttonSecondary:focus {
+  border-color: var(--primaryColor);
 }
 
 /* === Hero === */
@@ -761,11 +793,44 @@ p {
   }
 }
 
+/* === Gracias === */
+/* === Speakers === */
+#gracias h2 {
+  text-align: center;
+  margin: 0 auto .25em;
+  font-size: calc(2.25em + (32 - 2.25) * ((100vw - 320px) / (1920 - 320)));
+}
+
+#gracias h2::before {
+  content: '';
+  display: flex;
+  justify-items: center;
+  background-image: url(../images/icon-gracias.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto .25em;
+}
+
+.gracias-description {
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  #gracias h2::before {
+    width: 100px;
+    height: 60px;
+  }
+}
+/* --- Chapters --- */
 
 /* === Get Involved === */
 #get-involved h2 {
   text-align: left;
-  margin: 1em auto 1.25em;
+  margin: 3em auto 1.25em;
   font-size: calc(2.5em + (22 - 2.5) * ((100vw - 320px) / (1920 - 320)));
   display: inline-flex;
   align-items: end;
@@ -932,16 +997,6 @@ p {
   #get-involved .get-involved--submit {
     margin-top: -1em;
   }
-}
-
-#get-involved .button {
-  background-color: var(--primaryColor);
-  border-color: var(--primaryColor);
-}
-
-#get-involved .button:hover {
-  background-color: var(--backgroundColor);
-  color: var(--primaryColor);
 }
 
 #get-involved .getinvolved-form--message {
