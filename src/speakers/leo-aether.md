@@ -1,8 +1,9 @@
 ---
 name: 'Leo Aether'
 firstname: 'Leo'
-title: 'Singer / Songwriter'
-image: 'assets/images/speakers/placeholder2.svg'
+title: 'Singer | Songwriter | Owner'
+company: 'Aether Music'
+image: 'assets/images/speakers/leo-aether.jpeg'
 social:
   - name: 'instagram'
     famod: ''

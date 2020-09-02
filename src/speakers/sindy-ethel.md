@@ -1,7 +1,7 @@
 ---
 name: 'Sindy Ethel'
 firstname: 'Sindy'
-title: 'Designer / Illustrator'
+title: 'Designer | Illustrator'
 company: 'Hello Monday'
 image: 'assets/images/speakers/placeholder2.svg'
 social:

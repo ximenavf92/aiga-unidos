@@ -1,0 +1,40 @@
+{
+    "events": [
+        {
+            "day": "Tue",
+            "fecha": "9/29",
+            "title": "Title",
+            "time": "7:30 PM EST",
+            "chapter": "AIGA Detroit",
+            "speakers": "Cesar Rodriguez",
+            "link": "#"
+        },
+        {
+            "day": "Wed",
+            "fecha": "9/30",
+            "title": "Activism Panel",
+            "time": "7:30 PM EST",
+            "chapter": "AIGA DFW, Connecticut, KC, Houston",
+            "speakers": "Panelists: Yocelyn Riojas, Zaid Renato Consuegra Sauza, Costanza Segovia | Facilitator: Prof. Natacha Poggio",
+            "link": "#"
+        },
+        {
+            "day": "Thu",
+            "fecha": "10/1",
+            "title": "Title",
+            "time": "7:30 PM EST",
+            "chapter": "AIGA Detroit",
+            "speakers": "Noe Silva",
+            "link": "#"
+        },
+        {
+            "day": "Sat",
+            "fecha": "10/3",
+            "title": "Student Panel",
+            "time": "7:30 PM EST",
+            "chapter": "AIGA Atlanta, Jacksonville, and STL",
+            "speakers": "Students: Edwin Villalba, Heidi Lopez, y Erika Valenzuela | Facilitator: Prof. Gaby Hernandez",
+            "link": "#"
+        }
+    ]
+}

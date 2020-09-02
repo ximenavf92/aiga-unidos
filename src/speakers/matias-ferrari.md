@@ -1,8 +1,8 @@
 ---
 name: 'Matias Ferrari'
 firstname: 'Matias'
-title: 'Adjunct Professor / Head of Analysis & Processes'
-company: '"Design School at Universidad del Desarrollo"'
+title: 'Adjunct Professor | Head of Analysis & Processes'
+company: 'Design School at Universidad del Desarrollo'
 image: 'assets/images/speakers/matias-ferrari.jpg'
 social:
   - name: 'instagram'
@@ -11,4 +11,7 @@ social:
   - name: 'linkedin'
     famod: ''
     url: 'https://www.linkedin.com/in/matiasferraric/'
+  - name: 'link'
+    famod: ''
+    url: 'http://www.silvaferrari.com/en/index.html'
 ---
