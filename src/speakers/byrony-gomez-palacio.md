@@ -18,5 +18,3 @@ social:
     famod: ''
     url: 'https://underconsideration.com/'
 ---
-
-Graduated as a graphic designer at the University of Buenos Aires *(FADU-UBA)*, photographer and wood type collector, Pablo Pivetta combines all these interests to turn into filmmaking. Starting with short documentaries, ***ENDLESS LETTERPRESS*** is his first film.

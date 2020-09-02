@@ -3,7 +3,7 @@ name: 'Martin Tibabuzo'
 firstname: 'Martin'
 title: 'Creative Director'
 company: 'Peak Football'
-image: 'assets/images/speakers/placeholder2.svg'
+image: 'assets/images/speakers/martin-tibabuzo.jpg'
 social:
   - name: 'instagram'
     famod: ''
