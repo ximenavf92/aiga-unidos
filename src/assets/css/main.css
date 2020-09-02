@@ -31,10 +31,11 @@ a.skip-main {
 a.skip-main:focus,
 a.skip-main:active {
   color: #fff;
-  background-color: var(--secondaryColor);
-  border: 3px solid var(--primaryColor);
+  background-color: var(--primaryColor);
+  border: 3px solid var(--secondaryColor);
   outline: none;
-  left: 5%;
+  text-align: center;
+  left: 2%;
   top: auto;
   width: 12%;
   height: auto;
@@ -44,20 +45,8 @@ a.skip-main:active {
   border-radius: .4rem;
   padding: 10px 5px;
   z-index: 999;
+  transition: none!important;
 }
-
-/* @font-face {
-    font-family: 'gt-haptik';
-    src: url('fonts/gt-haptik/gt-haptik-regular-webfont.eot');
-    src:
-      url('../fonts/gt-haptik/gt-haptik-regular-webfont.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/gt-haptik/gt-haptik-regular-webfont.woff2') format('woff2'),
-      url('../fonts/gt-haptik/gt-haptik-regular-webfont.woff') format('woff'),
-      url('../fonts/gt-haptik/gt-haptik-regular-webfont.ttf') format('truetype'),
-      url('../fonts/gt-haptik/gt-haptik-regular-webfont.svg#medium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }   */
 
 :root {
   /* Colors */
@@ -65,7 +54,7 @@ a.skip-main:active {
   --secondaryColor: hsl(36, 96%, 54%);
   --accentColor: hsl(174, 48%, 53%);
   --supportColor-lt: hsla(0, 0%, 74%, .15);
-  --backgroundColor: hsl(0, 0%, 96%);
+  --backgroundColor: rgb(245, 245, 245);
   --textColor: hsla(0, 0%, 11%, 1);
   --textColor: hsla(0, 0%, 22%, 1);
   /* Typography */
@@ -74,10 +63,6 @@ a.skip-main:active {
   --borderRadius: .4rem;
   --boxShadow-lt: 0 2px 10px 2px var(--supportColor-lt);
 }
-
-/* html {
-  scroll-behavior: smooth;
-} */
 
 /* ====== SCROLLBAR ====== */
 html::-webkit-scrollbar {
@@ -1066,8 +1051,10 @@ a:hover {
   border-color: var(--secondaryColor);
 }
 
-.week-schedule--event-list .event-list--register:hover {
+.week-schedule--event-list .event-list--register:hover,
+.week-schedule--event-list .event-list--register:focus {
   background-color: var(--backgroundColor);
+  color: var(--textColor);
 }
 
 /* .week-schedule--event-list :nth-child(even) .event-list--register {

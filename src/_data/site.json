@@ -4,23 +4,23 @@
     "logo": "assets/images/aiga-unidos-logo-color1.svg",
     "weeks": [
       {
-          "title": "Week 1",
+          "semana": "Week 1",
           "link": "week1"
       },
       {
-          "title": "Week 2",
+          "semana": "Week 2",
           "link": "week2"
       },
       {
-          "title": "Week 3",
+          "semana": "Week 3",
           "link": "week3"
       },
       {
-          "title": "Week 4",
+          "semana": "Week 4",
           "link": "week4"
       },
       {
-          "title": "Week 5",
+          "semana": "Week 5",
           "link": "week5"
       }
   ]
