@@ -315,6 +315,16 @@ time {
   font-size: calc(1em + (4 - 1) * ((100vw - 320px) / (1920 - 320)));
   line-height: 1.8;
   margin: 0;
+  margin-bottom: .5em;
+}
+
+a {
+  color: var(--primaryColor);
+}
+
+a:hover {
+  color: var(--accentColor);
+  text-decoration: none;
 }
 
 /* Button Base */
@@ -434,6 +444,10 @@ time {
 .hero .mission-es {
   font-style: italic;
   font-size: .9em;
+}
+
+.hero .mission-es span {
+  font-size: .85em;
 }
 
 @media (min-width: 1000px) {
@@ -699,7 +713,8 @@ time {
   outline: none;
 }
 
-.speakers-grid--card-headshot a:focus::after {
+.speakers-grid--card-headshot a:focus::after,
+.speakers-grid--card-headshot a:hover::after {
   outline: none;
   border-bottom: solid 6px var(--accentColor);
 }
@@ -731,13 +746,15 @@ time {
   outline: 0;
 }
 
-.speakers-grid--name a:focus {
+.speakers-grid--name a:focus,
+.speakers-grid--name a:hover {
   text-decoration: underline;
   text-decoration-color: var(--secondaryColor);
   text-decoration-thickness: 3px;
 }
 
-.speakers-grid li:nth-child(even) .speakers-grid--name a:focus {
+.speakers-grid li:nth-child(even) .speakers-grid--name a:focus,
+.speakers-grid li:nth-child(even) .speakers-grid--name a:hover {
   text-decoration-color: var(--primaryColor);
 }
 
@@ -1045,7 +1062,7 @@ time {
 
   .week-schedule--event-list li {
     grid-template-columns: .5fr 2fr 1fr 1fr 1fr;
-    grid-template-columns: .25fr 2.5fr .5fr .5fr 1fr;
+    grid-template-columns: .25fr 2.5fr .5fr 1.25fr 1fr;
     grid-template-rows: 1fr;
     gap: 1em 2rem;
   }
@@ -1056,7 +1073,7 @@ time {
   }
 
   .event-list--event-title {
-    padding-right: 5em;
+    padding-right: 2em;
   }
 
   .event-list--day {
