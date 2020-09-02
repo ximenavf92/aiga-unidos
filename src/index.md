@@ -4,7 +4,7 @@ layout: 'layouts/home.html'
 hero:
   tagline: '¡Unidos hacemos la diferencia!'
   missionen: 'A multi-chapter collaboration, creates a space to empower and celebrate the lives, work, stories, and needs of creatives with a Latinx and Hispanic cultural heritage.'
-  missiones: 'Una colaboración entre secciones (chapters), que crea un espacio para empoderar y celebrar las vidas, el trabajo, las historias y las necesidades de los creativos con una herencia cultural latinx e hispana.'
+  missiones: 'Una colaboración entre secciones (chapters), creando un espacio en el cual se pueda empoderar y celebrar las vidas, los trabajos, las historias, y las voces de las personas creativas de herencia cultural Latinx e Hispana.'
   image: 'assets/images/home-image-shape-overlay.png'
   imgalt: 'candid shot of a group of people chatting at a conference'
 hht20:
