@@ -3,7 +3,7 @@
         {
             "day": "Mon",
             "fecha": "10/12",
-            "title": "Title",
+            "title": "How To Tell Your Parents You Don’t Want To Be a Doctor",
             "time": "7:30 PM EST",
             "chapter": "AIGA Orlando",
             "speakers": "Gladys Jose",
@@ -16,7 +16,7 @@
             "time": "7:30 PM EST",
             "chapter": "AIGA Detroit",
             "speakers": "Freddy Diaz",
-            "link": "#"
+            "link": "https://detroit.aiga.org/upcoming-events/"
         },
         {
             "day": "Wed",
@@ -25,7 +25,7 @@
             "time": "7:30 PM EST",
             "chapter": "AIGA CT",
             "speakers": "speaker",
-            "link": "#"
+            "link": "https://connecticut.aiga.org/upcoming-events/"
         },
         {
             "day": "Thu",
@@ -34,7 +34,7 @@
             "time": "7:30 PM EST",
             "chapter": "AIGA DFW",
             "speakers": "Armin Vit & Bryony Gomez-Palacio",
-            "link": "#"
+            "link": "https://dfw.aiga.org/upcoming-events/"
         }
     ]
 }
