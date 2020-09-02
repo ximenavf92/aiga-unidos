@@ -15,3 +15,5 @@ social:
     famod: ''
     url: 'https://www.facebook.com/elaine-lopez-0152a95/'
 ---
+
+Elaine is a Cuban-American designer, researcher, artist, and educator. Her work explores the intersection of cultural identity, equity, and diversity within the field of design. Through my practice, she creates new ways to share, honor, and celebrate the stories that have been neglected for too long due to white supremacy, patriarchy, and other forms of structural oppression. Elaine makes immersive graphic design experiences that challenge people to question and expand their worldview. She currently teaches graphic design at the Maryland Institute College of Art as a recipient of the AICAD Postgraduate Teaching Fellowship.

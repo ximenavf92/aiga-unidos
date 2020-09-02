@@ -9,3 +9,5 @@ social:
     famod: ''
     url: 'https://www.instagram.com/eevale2000/'
 ---
+
+Erika Valenzuela is a third year Interactive Design student at Maryville University. Her love for animated movies has inspired her to study and work towards having a career in the animation field.
