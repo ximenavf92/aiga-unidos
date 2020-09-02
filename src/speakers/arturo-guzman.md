@@ -3,7 +3,7 @@ name: 'Arturo Guzmán'
 firstname: 'Arturo'
 title: 'Designer'
 company: 'Outlook Amusements'
-image: 'assets/images/speakers/placeholder2.svg'
+image: 'assets/images/speakers/arturo-guzman.jpeg'
 social:
   - name: 'instagram'
     famod: ''
