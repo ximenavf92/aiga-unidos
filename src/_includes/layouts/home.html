@@ -47,7 +47,7 @@
             <article class="speakers-grid--card">
                 <figure class="speakers-grid--card-headshot">
                     <a href="{{ speakers.url }}">
-                        <img src="{{ speakers.data.image }}" alt="">
+                        <img src="{{ speakers.data.image }}" alt="{{ speakers.data.name }}">
                     </a>
                 </figure>
                 <div class="speakers-grid--info">
@@ -250,23 +250,23 @@
     <h2>Get Involved</h2>
     <form name="get-involved" method="POST" netlify>
         <p class="getinvolved-form--fname">
-            <label>First Name<br />
+            <label for="first-name">First Name<br />
                 <input type="text" name="first-name" required /></label>
         </p>
         <p class="getinvolved-form--lname">
-            <label>Last Name<br />
+            <label for="last-name">Last Name<br />
                 <input type="text" name="last-name" required /></label>
         </p>
         <p class="getinvolved-form--email">
-            <label> Email<br />
+            <label for="email"> Email<br />
                 <input type="email" name="email" required /></label>
         </p>
         <p class="getinvolved-form--city">
-            <label> Where do you live? <em>(city)</em><br />
+            <label for="city"> Where do you live? <em>(city)</em><br />
                 <input type="text" name="city" required /></label>
         </p>
         <!-- <p class="getinvolved-form--message">
-            <label>Message<br />
+            <label for="message">Message<br />
                 <textarea name="message"></textarea></label>
         </p> -->
         <ul class="getinvolved-form--checkbox">
