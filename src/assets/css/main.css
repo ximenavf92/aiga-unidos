@@ -93,10 +93,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar-track {
-  /* background: linear-gradient(to right, #201c29, #201c29 1px, #100e17 1px, #100e17); */
   background: var(--backgroundColor);
   box-shadow: inset 1px 1px 5px var(--supportColor-lt);
-  /* box-shadow: inset 1px 1px 4px var(--backgroundColor); */
 }
 
 :focus,
@@ -1004,6 +1002,7 @@ time {
 
 .event-list--event-title {
   margin: 0 0 .25em;
+  line-height: 1.5;
 }
 
 .week-schedule--event-list .event-list--register {
@@ -1134,9 +1133,9 @@ time {
 /* === Gracias === */
 /* === Speakers === */
 #gracias h2 {
-  text-align: center;
-  margin: 0 auto .1em;
-  font-size: calc(2.25em + (32 - 2.25) * ((100vw - 320px) / (1920 - 320)));
+  text-align: left;
+  margin: 0;
+  font-size: calc(2.1em + (32 - 2.1) * ((100vw - 320px) / (1920 - 320)));
 }
 
 #gracias h2::before {
@@ -1153,7 +1152,7 @@ time {
 }
 
 .gracias-description {
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
 }
 
@@ -1177,6 +1176,11 @@ time {
 }
 
 @media (min-width: 1000px) {
+  #gracias h2 {
+    margin: 0 auto .1em;
+    text-align: center;
+  }
+
   #gracias h2::before {
     width: 100px;
     height: 60px;
@@ -1184,6 +1188,7 @@ time {
   
   #gracias .gracias-description {
     text-indent: 1em;
+    text-align: center;
   }
 
   .gracias-grid--chapters {
