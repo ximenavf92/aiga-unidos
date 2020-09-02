@@ -33,11 +33,6 @@
             "url": "https://www.detroit.aiga.org/"
         },
         {
-            "name": "AIGA Saint Louis",
-            "logo": "assets/images/chapters/aiga-stlouis.svg",
-            "url": "https://www.stlouis.aiga.org/"
-        },
-        {
             "name": "AIGA Austin",
             "logo": "assets/images/chapters/aiga-austin.svg",
             "url": "https://www.austin.aiga.org/"
@@ -48,14 +43,19 @@
             "url": "https://www.jacksonville.aiga.org/"
         },
         {
-            "name": "AIGA Miami",
-            "logo": "assets/images/chapters/aiga-miami.svg",
-            "url": "https://www.miami.aiga.org/"
-        },
-        {
             "name": "AIGA Connecticut",
             "logo": "assets/images/chapters/aiga-ct.svg",
             "url": "https://www.connecticut.aiga.org/"
+        },
+        {
+            "name": "AIGA Saint Louis",
+            "logo": "assets/images/chapters/aiga-stlouis.svg",
+            "url": "https://www.stlouis.aiga.org/"
+        },
+        {
+            "name": "AIGA Miami",
+            "logo": "assets/images/chapters/aiga-miami.svg",
+            "url": "https://www.miami.aiga.org/"
         },
         {
             "name": "AIGA Kansas City",
@@ -63,11 +63,13 @@
             "url": "https://www.kc.aiga.org/"
         }
     ],
+    "sponsorHeading": "¡Muchas Gracias!",
+    "sponsorDescription": "A special thank you to our sponsors.",
     "sponsors": [
         {
-            "name": "Sponsor 1",
-            "logo": "assets/images/sponsors/sponsor.svg",
-            "url": "#"
+            "name": "Typecraft",
+            "logo": "assets/images/sponsors/typecraft.svg",
+            "url": "http://www.typecraft.com/"
         }
     ]
 }
