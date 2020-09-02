@@ -8,7 +8,8 @@
 /* Screen Reader Only */
 .sr-only {
   clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -88,7 +89,6 @@ html::-webkit-scrollbar {
 html::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, var(--primaryColor), var(--secondaryColor));
   border-radius: var(--borderRadius);
-  -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
 }
 
@@ -136,10 +136,14 @@ ul {
 }
 
 figure {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
 }
 
 /* === Navigation === */
@@ -238,6 +242,7 @@ figure {
   
   .header-main .nav-main {
     justify-self: end;
+    justify-self: flex-end;
   }
   
   .header-main .nav-main ul {
@@ -330,6 +335,8 @@ a:hover {
 /* Button Base */
 .button {
   display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   margin: .5em 0;
   padding: .5em .75em;
@@ -532,7 +539,8 @@ a:hover {
 
 .social-links li a:hover i {
   transition: ease-out .3s;
-  animation: .6s ease-in-out 1 shakeUp;
+  -webkit-animation: .6s ease-in-out 1 shakeUp;
+          animation: .6s ease-in-out 1 shakeUp;
 }
 
 .social-links li a:focus {
@@ -543,7 +551,22 @@ a:hover {
 
 .social-links li a:focus i {
   transition: ease-out .3s;
-  animation: .6s ease-in-out 1 shakeUp;
+  -webkit-animation: .6s ease-in-out 1 shakeUp;
+          animation: .6s ease-in-out 1 shakeUp;
+}
+
+@-webkit-keyframes shakeUp {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-5px) rotate(-5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0);
+  }
 }
 
 @keyframes shakeUp {
@@ -619,7 +642,8 @@ a:hover {
 
 .hht20--images img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: solid 3px var(--backgroundColor);
 }
 
@@ -697,7 +721,8 @@ a:hover {
 
 .speakers-grid--card-headshot img {
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .speakers-grid--card-headshot a::after {
@@ -749,13 +774,15 @@ a:hover {
 .speakers-grid--name a:focus,
 .speakers-grid--name a:hover {
   text-decoration: underline;
-  text-decoration-color: var(--secondaryColor);
+  -webkit-text-decoration-color: var(--secondaryColor);
+          text-decoration-color: var(--secondaryColor);
   text-decoration-thickness: 3px;
 }
 
 .speakers-grid li:nth-child(even) .speakers-grid--name a:focus,
 .speakers-grid li:nth-child(even) .speakers-grid--name a:hover {
-  text-decoration-color: var(--primaryColor);
+  -webkit-text-decoration-color: var(--primaryColor);
+          text-decoration-color: var(--primaryColor);
 }
 
 .speakers-grid--details li {
@@ -787,7 +814,8 @@ a:hover {
 
 .speakers-grid--social li a:hover i {
   transition: ease-out .3s;
-  animation: .6s ease-in-out 1 shakeUp;
+  -webkit-animation: .6s ease-in-out 1 shakeUp;
+          animation: .6s ease-in-out 1 shakeUp;
 }
 
 .speakers-grid--social li a:focus {
@@ -798,7 +826,8 @@ a:hover {
 
 .speakers-grid--social li a:focus i {
   transition: ease-out .3s;
-  animation: .6s ease-in-out 1 shakeUp;
+  -webkit-animation: .6s ease-in-out 1 shakeUp;
+          animation: .6s ease-in-out 1 shakeUp;
 }
 
 @media (min-width: 768px) {
@@ -838,6 +867,7 @@ a:hover {
   font-size: calc(3em + (30 - 3) * ((100vw - 320px) / (1920 - 320)));
   display: inline-flex;
   align-items: end;
+  align-items: flex-end;
 }
 
 #schedule h2::before {
@@ -905,6 +935,8 @@ a:hover {
 
 @media (min-width: 1000px) {
   .schedule-nav {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: 1em 0 5em;
     padding: .5em .75em;
@@ -944,6 +976,8 @@ a:hover {
 .week-schedule h3 {
   font-size: calc(1.4em + (20 - 1.4) * ((100vw - 320px) / (1920 - 320)));
   border-bottom: solid 3px var(--primaryColor);
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
 }
 
@@ -978,6 +1012,8 @@ a:hover {
 
 .week-schedule--event-list .event-list--dateBlock {
   display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   background-color: var(--accentColor);
   color: #fff;
@@ -1312,6 +1348,7 @@ a:hover {
   font-size: calc(2.5em + (22 - 2.5) * ((100vw - 320px) / (1920 - 320)));
   display: inline-flex;
   align-items: end;
+  align-items: flex-end;
 }
 
 #get-involved h2::before {
@@ -1473,6 +1510,7 @@ a:hover {
 #get-involved .get-involved--submit {
   grid-column: 2 / 3;
   justify-self: end;
+  justify-self: flex-end;
 }
 
 @media (max-width: 999px) {
@@ -1523,6 +1561,7 @@ a:hover {
   flex-wrap: wrap;
   justify-items: start;
   align-items: end;
+  align-items: flex-end;
 }
 
 .speaker-page h1::before {
@@ -1585,7 +1624,8 @@ a:hover {
 
 .footer a {
   color: #fff;
-  text-decoration-color: var(--accentColor);
+  -webkit-text-decoration-color: var(--accentColor);
+          text-decoration-color: var(--accentColor);
   text-decoration-thickness: 2px;
 }
 
