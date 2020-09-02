@@ -229,28 +229,41 @@
         </li>
         {% endfor %}
     </ul>
+    <div class="gracias-sponsors">
+        <h2>{{ gracias.sponsorHeading }}</h2>
+        <p class="gracias-description">{{ gracias.sponsorDescription }}</p>
+        <ul class="gracias-grid--chapters">
+            {% for sponsors in gracias.sponsors %}
+            <li>
+                <a href="{{ sponsors.url }}" target="_blank" rel="noopener">
+                    <img src="{{ sponsors.logo }}" alt="{{ sponsors.name }}">
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </section>
 
 <section class="section-margin" id="sponsors"></section>
 
 <section class="section-margin" id="get-involved">
     <h2>Get Involved</h2>
-    <form name="get-involved" method="POST" data-netlify="true">
+    <form name="get-involved" method="POST" netlify>
         <p class="getinvolved-form--fname">
             <label>First Name<br />
-                <input type="text" name="first-name" /></label>
+                <input type="text" name="first-name" required /></label>
         </p>
         <p class="getinvolved-form--lname">
             <label>Last Name<br />
-                <input type="text" name="last-name" /></label>
+                <input type="text" name="last-name" required /></label>
         </p>
         <p class="getinvolved-form--email">
             <label> Email<br />
-                <input type="email" name="email" /></label>
+                <input type="email" name="email" required /></label>
         </p>
         <p class="getinvolved-form--city">
             <label> Where do you live? <em>(city)</em><br />
-                <input type="text" name="city" /></label>
+                <input type="text" name="city" required /></label>
         </p>
         <!-- <p class="getinvolved-form--message">
             <label>Message<br />

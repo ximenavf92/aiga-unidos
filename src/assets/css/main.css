@@ -302,7 +302,7 @@ h3 {
 }
 
 h4 {
-  font-size: calc(1.2em + (12 - 1.2) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(1.2em + (8 - 1.2) * ((100vw - 320px) / (1920 - 320)));
 }
 
 h1>img {
@@ -784,7 +784,7 @@ time {
   animation: .6s ease-in-out 1 shakeUp;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 768px) {
   .speakers-grid {
     margin: 0 2em;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -842,7 +842,9 @@ time {
   margin: 1em 0 3em;
   padding: .5em 1em;
   border-radius: var(--borderRadius);
-  border: solid 3px hsla(0, 0%, 74%, .65);
+  border: solid 3px hsla(0, 0%, 74%, .4);
+  /* background-color: var(--suportColor-lt); */
+  box-shadow: var(--boxShadow-lt);
 }
 
 .schedule-nav ul {
@@ -856,7 +858,7 @@ time {
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: .025em;
+  letter-spacing: .1em;
 }
 
 .schedule-nav ul li {
@@ -1003,6 +1005,7 @@ time {
 .event-list--event-title {
   margin: 0 0 .25em;
   line-height: 1.5;
+  margin-bottom: .1em;
 }
 
 .week-schedule--event-list .event-list--register {
@@ -1049,14 +1052,21 @@ time {
 
   .week-schedule--event-list .event-list--dateBlock {
     display: block;
+    min-width: 5.5em;
+  }
+
+  .event-list--event-title {
+    padding-right: 5em;
   }
 
   .event-list--day {
     font-size: 1.2em;
+    text-align: center;
   }
   
   .event-list--date {
     font-size: 1.em;
+    text-align: center;
   }
 }
 
@@ -1069,7 +1079,7 @@ time {
     align-content: start;
     justify-content: start;
     align-items: start;
-    gap: 2rem 2rem;
+    gap: 3rem 2rem;
   }
 
   .week-schedule--event-list li {
@@ -1083,15 +1093,17 @@ time {
     align-self: start;
     margin-bottom: 1em;
     /* border-left: solid 4px var(--secondaryColor); */
+    border-radius: 0;
+    width: 35%;
   }
 
   .event-list--day {
     /* border-radius: var(--borderRadius); */
-    padding: .5em .75em;
+    padding: .25em .75em;
   }
 
   .event-list--date {
-    padding: 0 .5em 0 .25em;
+    padding: 0 .5em 0;
 }
 
   /* .event-list--event {
@@ -1175,6 +1187,50 @@ time {
   padding-bottom: 1em;
 }
 
+#gracias .gracias-sponsors h2::before {
+  background-image: url(../images/icon-schedule.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 55px;
+  height: 45px;
+  text-align: left;
+  margin: 0 .15em .35em;
+}
+
+.gracias-sponsors {
+  margin: 6em auto 4em;
+}
+
+.gracias-grid--chapters li {
+  text-align: left;
+}
+
+.gracias-sponsors li a {
+  text-align: left;
+  width: 55%;
+  margin: 0;
+}
+
+.gracias-sponsors li a img {
+  text-align: left;
+  width: 55%;
+  margin: 0;
+}
+
+.gracias-sponsors .gracias-grid--chapters {
+  margin: 2.5em auto 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5em 1em;
+}
+
+.gracias-sponsors li a img {
+  width: 55%;
+}
+
 @media (min-width: 1000px) {
   #gracias h2 {
     margin: 0 auto .1em;
@@ -1185,10 +1241,43 @@ time {
     width: 100px;
     height: 60px;
   }
+
+  ul.gracias-grid--chapters {
+    text-align: center;
+}
   
   #gracias .gracias-description {
     text-indent: 1em;
     text-align: center;
+  }
+
+  #gracias .gracias-sponsors h2 {
+    margin: 0 auto .1em;
+    /* text-align: left; */
+  }
+
+  #gracias .gracias-sponsors h2::before {
+    background-image: url(../images/icon-schedule.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 70px;
+    text-align: center;
+    margin: 0 auto .25em;
+  }
+
+  /* #gracias .gracias-sponsors .gracias-description {
+    text-align: left;
+  } */
+
+  .gracias-grid--chapters li {
+    text-align: center;
+  }
+
+  .gracias-sponsors li a img {
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
   }
 
   .gracias-grid--chapters {
