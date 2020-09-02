@@ -3,7 +3,7 @@
         {
             "day": "Tues",
             "fecha": "9/15",
-            "title": "Block Party, Kickoff Event",
+            "title": "Virtual Block Party, Kickoff Event",
             "time": "7:30 PM EST",
             "chapter": "AIGA Unidos",
             "speakers": "AIGA Unidos Founders",
@@ -34,7 +34,7 @@
             "time": "12:30 am EST / 2:30 PM EST",
             "chapter": "AIGA San Antonio",
             "speakers": "Sindy Ehtel",
-            "link": "#"
+            "link": "https://sanantonio.aiga.org/upcoming-events/"
         }
     ]
 }
