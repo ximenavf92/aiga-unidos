@@ -15,3 +15,5 @@ social:
     famod: ''
     url: 'https://piratesboneburgers.com/'
 ---
+
+Undocumented and unafraid Plant-based chef, born in Mexico City. Entrepreneur at the core, but with a passion for climate change, human , immigrant & animal rights activism.

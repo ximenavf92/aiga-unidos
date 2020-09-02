@@ -1,4 +1,5 @@
 {
     "layout": "layouts/speaker.html",
-    "tags": "speakers"
+    "tags": "speakers",
+    "title": "{{ speaker.name }}",
   }
