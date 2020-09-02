@@ -67,17 +67,6 @@ a.skip-main:active {
   --backgroundColor: hsl(0, 0%, 96%);
   --textColor: hsla(0, 0%, 11%, 1);
   --textColor: hsla(0, 0%, 22%, 1);
-
-  --pink: hsl(325, 92%, 48%);
-  --greenLime: hsl(77, 60%, 52%);
-  --green: hsl(127, 51%, 47%);
-  --aqua: hsl(174, 48%, 53%);
-  --teal: hsl(177, 60%, 30%);
-  --purple: hsl(291, 52%, 35%);
-  --orange: hsl(36, 96%, 54%);
-  --blue: hsl(230, 49%, 42%);
-  --cyan: hsl(196, 100%, 47%);
-  --red: hsl(358, 84%, 53%);
   /* Typography */
   --mainFont: 'Poppins', Arial, Helvetica, sans-serif;
   /* Style */
@@ -1034,7 +1023,6 @@ time {
 .week-schedule--event-list :nth-child(even) .event-list--register:hover {
   background-color: var(--backgroundColor);
 } */
-
 
 @media (min-width: 1000px) {
   .week-schedule {
