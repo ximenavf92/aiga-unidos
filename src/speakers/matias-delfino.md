@@ -1,7 +1,8 @@
 ---
 name: 'Matías Delfino'
+title: 'Matías Delfino'
 firstname: 'Matías'
-title: 'Global Brand Lead Designer'
+position: 'Global Brand Lead Designer'
 company: 'Unicef'
 image: 'assets/images/speakers/matias-delfino.jpg'
 social:

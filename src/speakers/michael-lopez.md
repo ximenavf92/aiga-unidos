@@ -1,7 +1,8 @@
 ---
 name: 'Michael Lopez'
+title: 'Michael Lopez'
 firstname: 'Michael'
-title: 'Senior Designer'
+position: 'Senior Designer'
 company: 'J.Hilburn'
 image: 'assets/images/speakers/michael-lopez.jpg'
 social:

@@ -1,7 +1,8 @@
 ---
 name: 'Nicolás Rodriguez Fuchs'
+title: 'Nicolás Rodriguez Fuchs'
 firstname: 'Nicolás'
-title: 'Co-director'
+position: 'Co-director'
 company: 'Los Últimos'
 image: 'assets/images/speakers/nicolas-rodriguez-fuchs.jpg'
 social:

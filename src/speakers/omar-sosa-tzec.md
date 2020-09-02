@@ -1,7 +1,8 @@
 ---
 name: 'Omar Sosa-Tzec'
+title: 'Omar Sosa-Tzec'
 firstname: 'Omar'
-title: 'Assistant Professor of Design Foundations'
+position: 'Assistant Professor of Design Foundations'
 image: 'assets/images/speakers/omar-sosa-tzec.jpg'
 social:
   - name: 'instagram'

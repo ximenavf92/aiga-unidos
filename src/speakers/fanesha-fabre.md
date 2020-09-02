@@ -1,7 +1,8 @@
 ---
 name: 'Fanesha Fabre'
+title: 'Fanesha Fabre'
 firstname: 'Fanesha'
-title: 'Owner | Illustrator'
+position: 'Owner | Illustrator'
 company: 'Fanesha Fabre Art'
 image: 'assets/images/speakers/fanesha-fabre.jpg'
 social:

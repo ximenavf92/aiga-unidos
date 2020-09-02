@@ -1,7 +1,8 @@
 ---
 name: 'Dio Jensen'
+title: 'Dio Jensen'
 firstname: 'Dio'
-title: 'Designer / Illustrator / Educator'
+position: 'Designer / Illustrator / Educator'
 company: 'Dio Jensen Design'
 image: 'assets/images/speakers/dio-jensen.jpg'
 social:

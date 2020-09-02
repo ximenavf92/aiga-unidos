@@ -1,7 +1,8 @@
 ---
 name: 'Heidi Lopez'
+title: 'Heidi Lopez'
 firstname: 'Heidi'
-title: 'Student'
+position: 'Student'
 company: 'Pratt Institute'
 image: 'assets/images/speakers/heidi-lopez.jpg'
 social:

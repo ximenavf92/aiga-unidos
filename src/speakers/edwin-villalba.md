@@ -1,7 +1,8 @@
 ---
 name: 'Edwin Villalba'
+title: 'Edwin Villalba'
 firstname: 'Edwin'
-title: 'Student'
+position: 'Student'
 company: 'Art Institute of Atlanta'
 image: 'assets/images/speakers/edwin-villalba.jpg'
 social:

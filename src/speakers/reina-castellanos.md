@@ -1,7 +1,8 @@
 ---
 name: 'Reina Castellanos'
+title: 'Reina Castellanos'
 firstname: 'Reina'
-title: 'Illustrator & Designer'
+position: 'Illustrator & Designer'
 company: 'AIGA Orlando'
 image: 'assets/images/speakers/reina-castellanos.jpg'
 social:

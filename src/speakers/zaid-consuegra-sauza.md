@@ -1,7 +1,8 @@
 ---
 name: 'Zaid Consuegra Sauza'
+title: 'Zaid Consuegra Sauza'
 firstname: 'Zaid'
-title: 'Executive Chef'
+position: 'Executive Chef'
 company: 'Pirate’s Bone Burgers'
 image: 'assets/images/speakers/zaid-consuegra-sauza.jpg'
 social:

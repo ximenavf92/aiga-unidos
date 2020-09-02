@@ -1,7 +1,8 @@
 ---
 name: 'Mari Mater'
+title: 'Mari Mater'
 firstname: 'Mari'
-title: 'Creative Director'
+position: 'Creative Director'
 company: 'Rubberband Design Studio'
 image: 'assets/images/speakers/mari-mater.jpg'
 social:

@@ -1,7 +1,8 @@
 ---
 name: 'Constanza Segovia'
+title: 'Constanza Segovia'
 firstname: 'Constanza'
-title: 'Owner | Visual Notetaker'
+position: 'Owner | Visual Notetaker'
 company: 'Veo Veo Design'
 image: 'assets/images/speakers/constanza-segovia.jpg'
 social:

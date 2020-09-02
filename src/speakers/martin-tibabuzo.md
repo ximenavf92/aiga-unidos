@@ -1,7 +1,8 @@
 ---
 name: 'Martin Tibabuzo'
+title: 'Martin Tibabuzo'
 firstname: 'Martin'
-title: 'Creative Director'
+position: 'Creative Director'
 company: 'Peak Football'
 image: 'assets/images/speakers/martin-tibabuzo.jpg'
 social:

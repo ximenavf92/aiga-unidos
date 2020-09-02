@@ -1,7 +1,8 @@
 ---
 name: 'Walter Suhr'
+title: 'Walter Suhr'
 firstname: 'Walter'
-title: 'Founder | Bandleader'
+position: 'Founder | Bandleader'
 company: 'Mango Punch'
 image: 'assets/images/speakers/walter-suhr.jpg'
 social:

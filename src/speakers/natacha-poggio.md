@@ -1,7 +1,8 @@
 ---
 name: 'Natacha Poggio'
+title: 'Natacha Poggio'
 firstname: 'Natacha'
-title: 'Design for Good Chair'
+position: 'Design for Good Chair'
 company: 'AIGA Houston'
 image: 'assets/images/speakers/natacha-poggio.jpg'
 social:

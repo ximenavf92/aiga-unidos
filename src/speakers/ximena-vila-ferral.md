@@ -1,7 +1,8 @@
 ---
 name: 'Ximena Vila Ferral'
+title: 'Ximena Vila Ferral'
 firstname: 'Ximena'
-title: 'President | Designer'
+position: 'President | Designer'
 company: 'AIGA San Antonio | Benson Design'
 image: 'assets/images/speakers/ximena-vila-ferral.jpg'
 social:

@@ -1,7 +1,8 @@
 ---
 name: 'Elio Leturia'
+title: 'Elio Leturia'
 firstname: 'Elio'
-title: 'Associate Professor of Journalism'
+position: 'Associate Professor of Journalism'
 company: 'Columbia College Chicago'
 image: 'assets/images/speakers/elio-leturia.jpg'
 social:

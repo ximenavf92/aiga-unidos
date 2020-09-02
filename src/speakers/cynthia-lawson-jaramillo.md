@@ -1,7 +1,8 @@
 ---
 name: 'Cynthia Lawson Jaramillo'
+title: 'Cynthia Lawson Jaramillo'
 firstname: 'Cynthia'
-title: 'Dean | Associate Professor of Integrated Design'
+position: 'Dean | Associate Professor of Integrated Design'
 company: 'School of Design Strategies | Parsons School of Design'
 image: 'assets/images/speakers/cynthia-lawson-jaramillo.jpg'
 social:

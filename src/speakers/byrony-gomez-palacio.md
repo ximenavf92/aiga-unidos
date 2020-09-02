@@ -1,7 +1,8 @@
 ---
 name: 'Bryony Gomez-Palacio'
+title: 'Bryony Gomez-Palacio'
 firstname: 'Bryony'
-title: 'Co-Founder'
+position: 'Co-Founder'
 company: 'UnderConsideration'
 image: 'assets/images/speakers/bryony-gomez-palacio.jpg'
 social:

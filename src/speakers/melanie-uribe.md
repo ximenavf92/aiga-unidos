@@ -1,7 +1,8 @@
 ---
 name: 'Melanie Uribe'
+title: 'Melanie Uribe'
 firstname: 'Melanie'
-title: 'Assistant Professor of Graphic Design'
+position: 'Assistant Professor of Graphic Design'
 company: 'Southern Connecticut State University'
 image: 'assets/images/speakers/melanie-uribe.jpg'
 social:

@@ -1,7 +1,8 @@
 ---
 name: 'Arturo Guzmán'
+title: 'Arturo Guzmán'
 firstname: 'Arturo'
-title: 'Designer'
+position: 'Designer'
 company: 'Outlook Amusements'
 image: 'assets/images/speakers/arturo-guzman.jpeg'
 social:

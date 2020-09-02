@@ -1,7 +1,8 @@
 ---
 name: 'Gaby Hernandez'
+title: 'Gaby Hernandez'
 firstname: 'Gaby'
-title: 'Assistant Professor'
+position: 'Assistant Professor'
 company: 'University of Florida'
 image: 'assets/images/speakers/gaby-hernandez.jpg'
 social:

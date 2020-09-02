@@ -1,7 +1,8 @@
 ---
 name: 'Elaine López'
+title: 'Elaine López'
 firstname: 'Elaine'
-title: 'Faculty in Graphic Design'
+position: 'Faculty in Graphic Design'
 company: 'Maryland Institute College of Art'
 image: 'assets/images/speakers/elaine-lopez.jpg'
 social:

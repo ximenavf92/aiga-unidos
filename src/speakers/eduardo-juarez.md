@@ -1,7 +1,8 @@
 ---
 name: 'Eduardo Juárez'
+title: 'Eduardo Juárez'
 firstname: 'Eduardo'
-title: 'Art Director'
+position: 'Art Director'
 company: 'Anderson Marketing Group'
 image: 'assets/images/speakers/eduardo-juarez.jpg'
 social:

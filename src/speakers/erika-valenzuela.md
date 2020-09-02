@@ -1,7 +1,8 @@
 ---
 name: 'Erika Valenzuela'
+title: 'Erika Valenzuela'
 firstname: 'Erika'
-title: 'Student'
+position: 'Student'
 company: 'Maryville University'
 image: 'assets/images/speakers/erika-valenzuela.jpg'
 social:

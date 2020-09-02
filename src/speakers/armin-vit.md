@@ -1,7 +1,8 @@
 ---
 name: 'Armin Vit'
+title: "Armin Vit"
 firstname: 'Armin'
-title: 'Co-Founder'
+position: 'Co-Founder'
 company: 'UnderConsideration'
 image: 'assets/images/speakers/armin-vit.jpg'
 social:

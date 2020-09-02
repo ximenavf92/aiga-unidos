@@ -1,7 +1,8 @@
 ---
 name: 'Pablo Pivetta'
+title: 'Pablo Pivetta'
 firstname: 'Pablo'
-title: 'Co-director'
+position: 'Co-director'
 company: 'Los Últimos'
 image: 'assets/images/speakers/pablo-pivetta.jpg'
 social:

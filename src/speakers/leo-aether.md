@@ -1,7 +1,8 @@
 ---
 name: 'Leo Aether'
+title: 'Leo Aether'
 firstname: 'Leo'
-title: 'Singer | Songwriter | Owner'
+position: 'Singer | Songwriter | Owner'
 company: 'Aether Music'
 image: 'assets/images/speakers/leo-aether.jpeg'
 social:

@@ -75,9 +75,9 @@ a.skip-main:active {
   --boxShadow-lt: 0 2px 10px 2px var(--supportColor-lt);
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 /* ====== SCROLLBAR ====== */
 html::-webkit-scrollbar {
@@ -107,7 +107,7 @@ html::-webkit-scrollbar-track {
 }
 
 :target {
-  scroll-margin-top: 350px;
+  scroll-margin-top: 5rem;
 }
 
 @media (min-width: 1000px) {
