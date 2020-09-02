@@ -16,4 +16,4 @@ social:
     url: 'https://www.facebook.com/arwelborn/'
 ---
 
-Anthony Welborn recieved his BFA in Graphic Design from St. Cloud State University in Minnesota in 1996. An adventurer and creative ronin, after graduating he operated a graphic design studio in Spain for 12 years before returning to the US. Since returing to the US, he's been a part of [AIGA San Antonio](https://sanantonio.aiga.org/), serving two terms as Co-President and President.
+Anthony Welborn received his BFA in Graphic Design from St. Cloud State University in Minnesota. He then took off on a creative and cultural adventure and operated a graphic design studio in Spain for 12 years. Since returning to the U.S., he has continued his career as a designer and art director, and has been a part of [AIGA San Antonio](https://sanantonio.aiga.org/), serving terms as Co-President and President.
