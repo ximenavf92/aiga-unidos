@@ -5,62 +5,62 @@
         {
             "name": "AIGA San Antonio",
             "logo": "assets/images/chapters/aiga-sanantonio.svg",
-            "url": "https://www.sanantonio.aiga.org/"
+            "url": "https://sanantonio.aiga.org/"
         },
         {
             "name": "AIGA Orlando",
             "logo": "assets/images/chapters/aiga-orlando.svg",
-            "url": "https://www.orlando.aiga.org/"
+            "url": "https://orlando.aiga.org/"
         },
         {
             "name": "AIGA Atlanta",
             "logo": "assets/images/chapters/aiga-atlanta.svg",
-            "url": "https://www.atlanta.aiga.org/"
+            "url": "https://atlanta.aiga.org/"
         },
         {
             "name": "AIGA Dallas Fort Worth",
             "logo": "assets/images/chapters/aiga-dfw.svg",
-            "url": "https://www.dallasftworth.aiga.org/"
+            "url": "https://dallasftworth.aiga.org/"
         },
         {
             "name": "AIGA Houston",
             "logo": "assets/images/chapters/aiga-houston.svg",
-            "url": "https://www.houston.aiga.org/"
+            "url": "https://houston.aiga.org/"
         },
         {
             "name": "AIGA Detroit",
             "logo": "assets/images/chapters/aiga-detroit.svg",
-            "url": "https://www.detroit.aiga.org/"
+            "url": "https://detroit.aiga.org/"
         },
         {
             "name": "AIGA Austin",
             "logo": "assets/images/chapters/aiga-austin.svg",
-            "url": "https://www.austin.aiga.org/"
+            "url": "https://austin.aiga.org/"
         },
         {
             "name": "AIGA Jacksonville",
             "logo": "assets/images/chapters/aiga-jacksonville.svg",
-            "url": "https://www.jacksonville.aiga.org/"
+            "url": "https://jacksonville.aiga.org/"
         },
         {
             "name": "AIGA Connecticut",
             "logo": "assets/images/chapters/aiga-ct.svg",
-            "url": "https://www.connecticut.aiga.org/"
+            "url": "https://connecticut.aiga.org/"
         },
         {
             "name": "AIGA Saint Louis",
             "logo": "assets/images/chapters/aiga-stlouis.svg",
-            "url": "https://www.stlouis.aiga.org/"
+            "url": "https://stlouis.aiga.org/"
         },
         {
             "name": "AIGA Miami",
             "logo": "assets/images/chapters/aiga-miami.svg",
-            "url": "https://www.miami.aiga.org/"
+            "url": "https://miami.aiga.org/"
         },
         {
             "name": "AIGA Kansas City",
             "logo": "assets/images/chapters/aiga-kc.svg",
-            "url": "https://www.kc.aiga.org/"
+            "url": "https://kc.aiga.org/"
         }
     ],
     "sponsorHeading": "¡Muchas Gracias!",
@@ -69,7 +69,7 @@
         {
             "name": "Typecraft",
             "logo": "assets/images/sponsors/typecraft.svg",
-            "url": "http://www.typecraft.com/"
+            "url": "http://typecraft.com/"
         }
     ]
 }
