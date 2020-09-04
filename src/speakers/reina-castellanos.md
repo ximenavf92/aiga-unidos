@@ -12,12 +12,6 @@ social:
   - name: 'linkedin'
     famod: ''
     url: 'https://www.linkedin.com/in/reinacastellanos/'
-  - name: 'twitter'
-    famod: ''
-    url: 'https://www.twitter.com/handle'
-  - name: 'facebook'
-    famod: ''
-    url: 'https://www.facebook.com/handle/'
 ---
 
 Reina Castellanos (b. 1987) is a Venezuelan artist living in the United States. She is a multidisciplinary artist that has worked in the fields of illustration, graphic design, video art, printmaking, and fine art. Her work has been exhibited across the United States in California, Illinois, New York, Georgia, and Florida. She holds an AS degree in Graphic Design from Valencia College, a BFA in Illustration from Savannah College of Art and Design, and an MFA in Emerging Media from University of Central Florida.

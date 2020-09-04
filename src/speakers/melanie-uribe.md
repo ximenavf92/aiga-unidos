@@ -15,6 +15,9 @@ social:
   - name: 'facebook'
     famod: ''
     url: 'https://www.facebook.com/melanieuribe/'
+  - name: 'link'
+    famod: ''
+    url: 'http://www.melanieuribe.com/'
 ---
 
 Melanie Uribe is a Venezuelan designer and Assistant Professor at Southern Connecticut State University, where her research focuses on exploring the notion of exhibition space as a medium that facilitates effective communication, information flow, and the sharing of narratives that are both personal and universal about the complicated experiences of immigrants; voluntary or involuntary. Her curiosity and excitement about the power of the language of graphic design drives her research. Design is more than a commercial endeavor—it is the strategic representation of creative thinking and an indispensable method of communication that helps shape our cultural identity. When not designing, she spends her free time taking workshops and learning new art techniques, volunteering with animal rescues and traveling.

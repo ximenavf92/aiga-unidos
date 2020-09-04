@@ -3,7 +3,7 @@ name: 'Victor Davila'
 title: "Victor Davila"
 firstname: 'Victor'
 position: 'Illustrator, Designer, Educator'
-company: 'University of Central Florida''s School of Visual Arts and Design'
+company: 'University of Central Florida'
 image: 'assets/images/speakers/victor-davila.jpeg'
 social:
   - name: 'instagram'
