@@ -733,6 +733,7 @@ a:hover {
      object-fit: contain;
 }
 
+@media (min-width: 1000px) {
 .speakers-grid--card-headshot::before {
   content: '';
   display: block;
@@ -766,6 +767,7 @@ a:hover {
 
 .speakers-grid--card-headshot:hover::before {
   opacity: .8;
+}
 }
 
 .speakers-grid--card-headshot a::after {
