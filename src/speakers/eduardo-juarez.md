@@ -1,6 +1,6 @@
 ---
-name: 'Eduardo Juárez'
-title: 'Eduardo Juárez'
+name: 'Eduardo Juarez'
+title: 'Eduardo Juarez'
 firstname: 'Eduardo'
 position: 'Art Director'
 company: 'Anderson Marketing Group'
@@ -15,7 +15,7 @@ social:
   - name: 'twitter'
     famod: ''
     url: 'https://www.twitter.com/kideddie/'
-  - name: link
+  - name: 'link'
     famod: ''
     url: 'http://eddiethecreative.com/'
 ---

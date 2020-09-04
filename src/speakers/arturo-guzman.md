@@ -8,14 +8,11 @@ image: 'assets/images/speakers/arturo-guzman.jpeg'
 social:
   - name: 'instagram'
     famod: ''
-    url: 'https://www.instagram.com/kideddie/'
+    url: 'https://www.instagram.com/r2dough/'
   - name: 'linkedin'
     famod: ''
-    url: 'https://www.linkedin.com/in/kideddie/'
-  - name: 'twitter'
+    url: 'https://www.linkedin.com/in/arturo-guzman-a79a6a121/'
+  - name: 'link'
     famod: ''
-    url: 'https://www.twitter.com/kideddie/'
-  - name: link
-    famod: ''
-    url: 'http://eddiethecreative.com/'
+    url: 'https://www.aggd.co/'
 ---

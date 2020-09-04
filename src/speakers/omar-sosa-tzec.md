@@ -3,6 +3,7 @@ name: 'Omar Sosa-Tzec'
 title: 'Omar Sosa-Tzec'
 firstname: 'Omar'
 position: 'Assistant Professor of Design Foundations'
+company: 'San Francisco State University'
 image: 'assets/images/speakers/omar-sosa-tzec.jpg'
 social:
   - name: 'instagram'

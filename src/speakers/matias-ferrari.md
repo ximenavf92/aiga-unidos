@@ -3,7 +3,7 @@ name: 'Matias Ferrari'
 title: 'Matias Ferrari'
 firstname: 'Matias'
 position: 'Adjunct Professor | Head of Analysis & Processes'
-company: 'Design School at Universidad del Desarrollo'
+company: 'Design School at Universidad del Desarrollo, Chile'
 image: 'assets/images/speakers/matias-ferrari.jpg'
 social:
   - name: 'instagram'

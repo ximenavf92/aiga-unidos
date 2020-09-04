@@ -15,7 +15,7 @@ social:
   - name: 'twitter'
     famod: ''
     url: 'https://www.twitter.com/mangopunch/'
-  - name: link
+  - name: 'link'
     famod: ''
     url: 'https://www.mangopunch.com/'
 ---

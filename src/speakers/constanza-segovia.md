@@ -15,7 +15,7 @@ social:
   - name: 'facebook'
     famod: ''
     url: 'https://www.facebook.com/veoveodesignCT/'
-  - name: link
+  - name: 'link'
     famod: ''
     url: 'https://veoveodesign.com/'
 ---

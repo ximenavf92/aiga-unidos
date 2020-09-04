@@ -18,7 +18,7 @@ social:
   - name: 'facebook'
     famod: ''
     url: 'https://www.facebook.com/materoneill/'
-  - name: link
+  - name: 'link'
     famod: ''
     url: 'https://northumbria.academia.edu/MariaONeill'
 ---

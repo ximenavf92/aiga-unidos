@@ -18,7 +18,7 @@ social:
   - name: 'facebook'
     famod: ''
     url: 'https://www.facebook.com/matias.delfino/'
-  - name: link
+  - name: 'link'
     famod: ''
     url: 'www.matiasdelfino.com'
 ---

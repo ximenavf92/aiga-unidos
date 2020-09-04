@@ -20,7 +20,7 @@ social:
     url: 'https://github.com/ximenavf92'
   - name: 'link'
     famod: ''
-    url: 'handle'
+    url: 'https://ximenavf.com/'
 ---
 
 Ximena *(He-Men-Ah)* is a Mexican-born designer who has called Texas home for almost 12 years. She majored in graphic design, at UIW in San Antonio, but has shifted her focus to web design and development. Tequila, taco, and language enthusiast, Ximena also likes to dance, cook while dancing, spend time with family and friends, and is always eager to learn new things, ANYthing. A proud Hufflepuff, Ximena is President of [AIGA San Antonio](https://sanantonio.aiga.org/) and AIGA Unidos co-founder, with the goal to elevate design and create a welcoming creative community for all. A front-end developer in training who will always love design, Ximena wants to unite the design and tech communities in working and learning from each other.

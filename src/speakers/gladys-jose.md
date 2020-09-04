@@ -14,7 +14,7 @@ social:
   - name: 'facebook'
     famod: ''
     url: 'https://www.facebook.com/gladysjosedraws/'
-  - name: link
+  - name: 'link'
     famod: ''
     url: 'https://gladysjose.com/'
 ---

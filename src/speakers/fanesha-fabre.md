@@ -12,7 +12,7 @@ social:
   - name: 'twitter'
     famod: ''
     url: 'https://www.twitter.com/faneshafabre'
-  - name: link
+  - name: 'link'
     famod: ''
     url: 'https://www.faneshafabreart.com/'
 ---

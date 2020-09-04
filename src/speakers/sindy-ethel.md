@@ -2,14 +2,20 @@
 name: 'Sindy Ethel'
 title: 'Sindy Ethel'
 firstname: 'Sindy'
-position: 'Designer | Illustrator'
+position: 'Designer & Illustrator'
 company: 'Hello Monday'
 image: 'assets/images/speakers/sindy-ethel.jpg'
 social:
   - name: 'instagram'
     famod: ''
     url: 'https://www.instagram.com/sindy.ethel/'
-  - name: link
+  - name: 'twitter'
+    famod: ''
+    url: 'https://www.twitter.com/sindyethel'
+  - name: 'linkedin'
+    famod: ''
+    url: 'https://www.linkedin.com/in/sindyethel/'
+  - name: 'behance'
     famod: ''
     url: 'https://www.behance.net/sindyethel/'
 ---

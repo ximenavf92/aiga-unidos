@@ -2,8 +2,8 @@
 name: 'Michael Lopez'
 title: 'Michael Lopez'
 firstname: 'Michael'
-position: 'Senior Designer'
-company: 'J.Hilburn'
+position: 'Programing Director | Senior Designer'
+company: 'AIGA DFW | J.Hilburn'
 image: 'assets/images/speakers/michael-lopez.jpg'
 social:
   - name: 'instagram'

@@ -8,11 +8,11 @@ image: 'assets/images/speakers/zaid-consuegra-sauza.jpg'
 social:
   - name: 'instagram'
     famod: ''
-    url: 'https://www.instagram.com/piratesboneburgers/'
+    url: 'https://www.instagram.com/chefzaidconsuegra/'
   - name: 'facebook'
     famod: ''
     url: 'https://www.facebook.com/PiratesBoneBurgers/'
-  - name: link
+  - name: 'link'
     famod: ''
     url: 'https://piratesboneburgers.com/'
 ---

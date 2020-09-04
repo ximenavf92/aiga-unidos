@@ -15,7 +15,7 @@ social:
   - name: 'facebook'
     famod: ''
     url: 'https://www.facebook.com/losultimosdoc/'
-  - name: link
+  - name: 'link'
     famod: ''
     url: 'https://fuxie1.wixsite.com/losultimosdoc'
 ---
