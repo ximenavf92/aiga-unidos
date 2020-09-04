@@ -12,7 +12,7 @@
         {
             "day": "Tue",
             "fecha": "10/13",
-            "title": "Title",
+            "title": "TBD",
             "time": "7:30 PM EST",
             "chapter": "AIGA Detroit",
             "speakers": "Freddy Diaz",
@@ -21,16 +21,16 @@
         {
             "day": "Wed",
             "fecha": "10/14",
-            "title": "Title",
+            "title": "Education Panel",
             "time": "7:30 PM EST",
             "chapter": "AIGA Connecticut",
-            "speakers": "speaker",
+            "speakers": "",
             "link": "https://connecticut.aiga.org/upcoming-events/"
         },
         {
             "day": "Thu",
             "fecha": "10/15",
-            "title": "Title",
+            "title": "Hecho en USA the Mexican Way",
             "time": "7:30 PM EST",
             "chapter": "AIGA Dallas Fort Worth",
             "speakers": "Armin Vit & Bryony Gomez-Palacio",
