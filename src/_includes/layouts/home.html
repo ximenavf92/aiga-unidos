@@ -47,7 +47,7 @@
             <article class="speakers-grid--card">
                 <figure class="speakers-grid--card-headshot">
                     <a href="{{ speakers.url }}">
-                        <img src="{{ speakers.data.image }}" alt="{{ speakers.data.name }}">
+                        <img src="{{ speakers.data.image }}" alt="{{ speakers.data.name }}" width="276" height="276">
                     </a>
                 </figure>
                 <div class="speakers-grid--info">
@@ -85,150 +85,154 @@
         </ul>
     </nav>
 
-    {% set weekCurrent = 'week1' %}
-    {% set weekHeading = 'Week 1' %}
-    <article id="{{ weekCurrent }}" class="week-schedule">
-        <h3>{{ weekHeading }}</h3>
-            <ul class="week-schedule--event-list">
-                {% for events in week1.events %}
-                <li>
-                    <div class="event-list--dateBlock">
-                        <p class="event-list--day">{{ events.day }}</p>
-                        <p class="event-list--date">{{ events.fecha }}</p>
-                    </div>
-                    <div class="event-list--event">
-                        <h4 class="event-list--event-title">{{ events.title }}</h4>
-                        <p class="event-list--event-speaker">{{ events.speakers }}</p>
-                        
-                    </div>
-                    <time class="event-list--time">{{ events.time }}</time>
-                    <p class="event-list--chapter">{{ events.chapter }}</p>
-                    <a href="{{ events.link }}" class="button event-list--register">Register</a>
-                </li>
-                {% endfor %}
-                    <!-- <li>
+    <div class="week-block">
+        {% set weekCurrent = 'week1' %}
+        {% set weekHeading = 'Week 1' %}
+        <article id="{{ weekCurrent }}" class="week-schedule">
+            <h3>{{ weekHeading }}</h3>
+                <ul class="week-schedule--event-list">
+                    {% for events in week1.events %}
+                    <li>
                         <div class="event-list--dateBlock">
-                            <p class="event-list--day">Tues</p>
-                            <p class="event-list--date">9/15</p>
+                            <p class="event-list--day">{{ events.day }}</p>
+                            <p class="event-list--date">{{ events.fecha }}</p>
                         </div>
-                        <h4>Block Party</h4>
-                        <time class="event-list--time">7:30 EST</time>
+                        <div class="event-list--event">
+                            <h4 class="event-list--event-title">{{ events.title }}</h4>
+                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
+                            
+                        </div>
+                        <time class="event-list--time">{{ events.time }}</time>
                         <p class="event-list--chapter">{{ events.chapter }}</p>
                         <a href="{{ events.link }}" class="button event-list--register">Register</a>
-                    </li> -->
-            </ul>
-    </article>
+                    </li>
+                    {% endfor %}
+                        <!-- <li>
+                            <div class="event-list--dateBlock">
+                                <p class="event-list--day">Tues</p>
+                                <p class="event-list--date">9/15</p>
+                            </div>
+                            <h4>Block Party</h4>
+                            <time class="event-list--time">7:30 EST</time>
+                            <p class="event-list--chapter">{{ events.chapter }}</p>
+                            <a href="{{ events.link }}" class="button event-list--register">Register</a>
+                        </li> -->
+                </ul>
+        </article>
+        
+        {% set weekCurrent = 'week2' %}
+        {% set weekHeading = 'Week 2' %}
+        <article id="{{ weekCurrent }}" class="week-schedule">
+            <h3>{{ weekHeading }}</h3>
+                <ul class="week-schedule--event-list">
+                    {% for events in week2.events %}
+                    <li>
+                        <div class="event-list--dateBlock">
+                            <p class="event-list--day">{{ events.day }}</p>
+                            <p class="event-list--date">{{ events.fecha }}</p>
+                        </div>
+                        <div class="event-list--event">
+                            <h4 class="event-list--event-title">{{ events.title }}</h4>
+                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
+                            
+                        </div>
+                        <time class="event-list--time">{{ events.time }}</time>
+                        <p class="event-list--chapter">{{ events.chapter }}</p>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+        </article>
     
-    {% set weekCurrent = 'week2' %}
-    {% set weekHeading = 'Week 2' %}
-    <article id="{{ weekCurrent }}" class="week-schedule">
-        <h3>{{ weekHeading }}</h3>
-            <ul class="week-schedule--event-list">
-                {% for events in week2.events %}
-                <li>
-                    <div class="event-list--dateBlock">
-                        <p class="event-list--day">{{ events.day }}</p>
-                        <p class="event-list--date">{{ events.fecha }}</p>
-                    </div>
-                    <div class="event-list--event">
-                        <h4 class="event-list--event-title">{{ events.title }}</h4>
-                        <p class="event-list--event-speaker">{{ events.speakers }}</p>
-                        
-                    </div>
-                    <time class="event-list--time">{{ events.time }}</time>
-                    <p class="event-list--chapter">{{ events.chapter }}</p>
-                    <a href="{{ events.link }}" class="button event-list--register">Register</a>
-                </li>
-                {% endfor %}
-            </ul>
-    </article>
-
-    {% set weekCurrent = 'week3' %}
-    {% set weekHeading = 'Week 3' %}
-    <article id="{{ weekCurrent }}" class="week-schedule">
-        <h3>{{ weekHeading }}</h3>
-            <ul class="week-schedule--event-list">
-                {% for events in week3.events %}
-                <li>
-                    <div class="event-list--dateBlock">
-                        <p class="event-list--day">{{ events.day }}</p>
-                        <p class="event-list--date">{{ events.fecha }}</p>
-                    </div>
-                    <div class="event-list--event">
-                        <h4 class="event-list--event-title">{{ events.title }}</h4>
-                        <p class="event-list--event-speaker">{{ events.speakers }}</p>
-                        
-                    </div>
-                    <time class="event-list--time">{{ events.time }}</time>
-                    <p class="event-list--chapter">{{ events.chapter }}</p>
-                    <a href="{{ events.link }}" class="button event-list--register">Register</a>
-                </li>
-                {% endfor %}
-            </ul>
-    </article>
-
-    {% set weekCurrent = 'week4' %}
-    {% set weekHeading = 'Week 4' %}
-    <article id="{{ weekCurrent }}" class="week-schedule">
-        <h3>{{ weekHeading }}</h3>
-            <ul class="week-schedule--event-list">
-                {% for events in week4.events %}
-                <li>
-                    <div class="event-list--dateBlock">
-                        <p class="event-list--day">{{ events.day }}</p>
-                        <p class="event-list--date">{{ events.fecha }}</p>
-                    </div>
-                    <div class="event-list--event">
-                        <h4 class="event-list--event-title">{{ events.title }}</h4>
-                        <p class="event-list--event-speaker">{{ events.speakers }}</p>
-                        
-                    </div>
-                    <time class="event-list--time">{{ events.time }}</time>
-                    <p class="event-list--chapter">{{ events.chapter }}</p>
-                    <a href="{{ events.link }}" class="button event-list--register">Register</a>
-                </li>
-                {% endfor %}
-            </ul>
-    </article>
-
-    {% set weekCurrent = 'week5' %}
-    {% set weekHeading = 'Week 5' %}
-    <article id="{{ weekCurrent }}" class="week-schedule">
-        <h3>{{ weekHeading }}</h3>
-            <ul class="week-schedule--event-list">
-                {% for events in week5.events %}
-                <li>
-                    <div class="event-list--dateBlock">
-                        <p class="event-list--day">{{ events.day }}</p>
-                        <p class="event-list--date">{{ events.fecha }}</p>
-                    </div>
-                    <div class="event-list--event">
-                        <h4 class="event-list--event-title">{{ events.title }}</h4>
-                        <p class="event-list--event-speaker">{{ events.speakers }}</p>
-                        
-                    </div>
-                    <time class="event-list--time">{{ events.time }}</time>
-                    <p class="event-list--chapter">{{ events.chapter }}</p>
-                    <a href="{{ events.link }}" class="button event-list--register">Register</a>
-                </li>
-                {% endfor %}
-            </ul>
-    </article>
+        {% set weekCurrent = 'week3' %}
+        {% set weekHeading = 'Week 3' %}
+        <article id="{{ weekCurrent }}" class="week-schedule">
+            <h3>{{ weekHeading }}</h3>
+                <ul class="week-schedule--event-list">
+                    {% for events in week3.events %}
+                    <li>
+                        <div class="event-list--dateBlock">
+                            <p class="event-list--day">{{ events.day }}</p>
+                            <p class="event-list--date">{{ events.fecha }}</p>
+                        </div>
+                        <div class="event-list--event">
+                            <h4 class="event-list--event-title">{{ events.title }}</h4>
+                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
+                            
+                        </div>
+                        <time class="event-list--time">{{ events.time }}</time>
+                        <p class="event-list--chapter">{{ events.chapter }}</p>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+        </article>
+    
+        {% set weekCurrent = 'week4' %}
+        {% set weekHeading = 'Week 4' %}
+        <article id="{{ weekCurrent }}" class="week-schedule">
+            <h3>{{ weekHeading }}</h3>
+                <ul class="week-schedule--event-list">
+                    {% for events in week4.events %}
+                    <li>
+                        <div class="event-list--dateBlock">
+                            <p class="event-list--day">{{ events.day }}</p>
+                            <p class="event-list--date">{{ events.fecha }}</p>
+                        </div>
+                        <div class="event-list--event">
+                            <h4 class="event-list--event-title">{{ events.title }}</h4>
+                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
+                            
+                        </div>
+                        <time class="event-list--time">{{ events.time }}</time>
+                        <p class="event-list--chapter">{{ events.chapter }}</p>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+        </article>
+    
+        {% set weekCurrent = 'week5' %}
+        {% set weekHeading = 'Week 5' %}
+        <article id="{{ weekCurrent }}" class="week-schedule">
+            <h3>{{ weekHeading }}</h3>
+                <ul class="week-schedule--event-list">
+                    {% for events in week5.events %}
+                    <li>
+                        <div class="event-list--dateBlock">
+                            <p class="event-list--day">{{ events.day }}</p>
+                            <p class="event-list--date">{{ events.fecha }}</p>
+                        </div>
+                        <div class="event-list--event">
+                            <h4 class="event-list--event-title">{{ events.title }}</h4>
+                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
+                            
+                        </div>
+                        <time class="event-list--time">{{ events.time }}</time>
+                        <p class="event-list--chapter">{{ events.chapter }}</p>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+        </article>
+    </div>
     
 </section>
 
 <section class="section-margin" id="gracias">
-    <h2>{{ gracias.heading }}</h2>
-    <p class="gracias-description">{{ gracias.description }}</p>
-    <ul class="gracias-grid--chapters">
-        {% for chapters in gracias.chapters %}
-        <li>
-            <a href="{{ chapters.url }}" target="_blank" rel="noopener">
-                <img src="{{ chapters.logo }}" alt="{{ chapters.name }}">
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="gracias-chapters">
+        <h2>{{ gracias.heading }}</h2>
+        <p class="gracias-description">{{ gracias.description }}</p>
+        <ul class="gracias-grid--chapters">
+            {% for chapters in gracias.chapters %}
+            <li>
+                <a href="{{ chapters.url }}" target="_blank" rel="noopener">
+                    <img src="{{ chapters.logo }}" alt="{{ chapters.name }}">
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
     <div class="gracias-sponsors">
         <h2>{{ gracias.sponsorHeading }}</h2>
         <p class="gracias-description">{{ gracias.sponsorDescription }}</p>
