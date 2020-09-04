@@ -53,10 +53,18 @@ a.skip-main:active {
   --primaryColor: hsl(325, 92%, 48%);
   --secondaryColor: hsl(36, 96%, 54%);
   --accentColor: hsl(174, 48%, 53%);
-  --supportColor-lt: hsla(0, 0%, 74%, .15);
-  --backgroundColor: rgb(245, 245, 245);
-  --textColor: hsla(0, 0%, 11%, 1);
-  --textColor: hsla(0, 0%, 22%, 1);
+  --supportColor-lt: hsla(0, 0%, 74%, .25);
+  --backgroundColor: hsl(0, 0%, 98%);
+  --headingColor: hsla(0, 0%, 18%, 1);
+  --textColor: hsla(0, 0%, 32%, 1);
+  
+  --purple: hsl(291, 52%, 35%);
+  --green: hsl(127, 51%, 47%);
+  --aqua: hsl(174, 48%, 53%);
+  --teal: hsl(177, 60%, 30%);
+  --blue: hsl(230, 49%, 42%);
+  --red: hsl(358, 84%, 53%);
+
   /* Typography */
   --mainFont: 'Poppins', Arial, Helvetica, sans-serif;
   /* Style */
@@ -276,6 +284,7 @@ main:focus {
 
 h1, h2, h3, h4 {
   font-weight: 600;
+  color: var(--headingColor);
 }
 
 h1 {
@@ -284,7 +293,7 @@ h1 {
 }
 
 h2 {
-  font-size: calc(2em + (30 - 2) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(2em + (45 - 2) * ((100vw - 320px) / (1920 - 320)));
 }
 
 h3 {
@@ -434,7 +443,7 @@ a:hover {
 }
 
 .hero .mission-es {
-  font-style: italic;
+  /* font-style: italic; */
   font-size: .9em;
 }
 
@@ -444,7 +453,7 @@ a:hover {
 
 @media (min-width: 1000px) {
   .section-margin {
-    margin: 12rem 8rem;
+    margin: 16rem 8rem 10rem;
   }
 
   .hero {
@@ -455,15 +464,17 @@ a:hover {
 
   .hero h2 {
     width: 75%;
+    width: 90%;
   }
 
   .hero img {
     display: block;
     width: 100%;
+    transform: translateX(-1em);
   }
 
   .hero .mission-es {
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 1.15em;
   }
 
@@ -538,6 +549,10 @@ a:hover {
   transition: ease-out .3s;
   -webkit-animation: .6s ease-in-out 1 shakeUp;
           animation: .6s ease-in-out 1 shakeUp;
+  -webkit-transform: translate3d(0, 0, 0);
+  /* more specific animation properties here */
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 }
 
 @-webkit-keyframes shakeUp {
@@ -629,7 +644,9 @@ a:hover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: solid 3px var(--backgroundColor);
+  /* border: solid 3px var(--backgroundColor); */
+  box-shadow: var(--boxShadow-lt);
+  border-radius: var(--borderRadius);
 }
 
 .hht20--img1 {
@@ -652,6 +669,7 @@ a:hover {
 
   #hispanic-heritage-talks h2 {
     width: 70%;
+    width: 80%;
   }
   
   #hispanic-heritage-talks h2::before {
@@ -663,7 +681,7 @@ a:hover {
 #speakers h2 {
   text-align: center;
   margin: 0 auto 1.25em;
-  font-size: calc(3em + (30 - 3) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(3em + (45 - 3) * ((100vw - 320px) / (1920 - 320)));
 }
 
 #speakers h2::before {
@@ -704,10 +722,50 @@ a:hover {
   gap: 0 1em;
 }
 
+.speakers-grid--card-headshot {
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+}
+
 .speakers-grid--card-headshot img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.speakers-grid--card-headshot::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/icon-hht.svg);
+  background-image: url(../images/icon-getinvolved.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+  /* filter: sepia(); */
+  -webkit-filter: hue-rotate(36);
+          filter: hue-rotate(36);
+  opacity: .35;
+  /* mix-blend-mode: color-burn; */
+  position: absolute;
+    top: 4%;
+    left: 2%;
+    z-index: 5;
+}
+
+.speakers-grid :nth-child(even) .speakers-grid--card-headshot::before {
+  background-image: url(../images/icon-speakers.svg);
+  background-image: url(../images/icon-gracias.svg);
+  transform: rotate(0);
+  width: 70px;
+  height: 70px;
+  top: 79%;
+  left: 71%;
+}
+
+.speakers-grid--card-headshot:hover::before {
+  opacity: .8;
 }
 
 .speakers-grid--card-headshot a::after {
@@ -727,6 +785,7 @@ a:hover {
 .speakers-grid--card-headshot a:hover::after {
   outline: none;
   border-bottom: solid 6px var(--accentColor);
+  border-bottom: solid 6px var(--secondaryColor);
 }
 
 .speakers-grid--name {
@@ -743,13 +802,15 @@ a:hover {
   font-style: italic;
 }
 
-.speakers-grid li:nth-child(even) .speakers-grid--name a {
-  color: var(--secondaryColor);
-}
-
 .speakers-grid--name a {
   text-decoration: none;
   color: var(--primaryColor);
+  color: var(--headingColor);
+
+}
+
+.speakers-grid li:nth-child(even) .speakers-grid--name a {
+  /* color: var(--secondaryColor); */
 }
 
 .speakers-grid--name a:focus {
@@ -905,6 +966,7 @@ a:hover {
     color: var(--secondaryColor);
   }
 }
+
 .schedule-nav ul li a {
   color: var(--textColor);
   text-decoration: none;
@@ -936,6 +998,7 @@ a:hover {
   .schedule-nav ul li {
     line-height: 0;
     border-left: solid 3px var(--secondaryColor);
+    /* border-left: solid 3px var(--primaryColor); */
     padding: 0 1em 0;
     text-align: center;
   }
@@ -960,15 +1023,16 @@ a:hover {
 
 .week-schedule h3 {
   font-size: calc(1.4em + (20 - 1.4) * ((100vw - 320px) / (1920 - 320)));
-  border-bottom: solid 3px var(--primaryColor);
+  border-bottom: solid 3px var(--secondaryColor);
+  border-bottom: solid 3px var(--accentColor);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
-.week-schedule:nth-child(even) h3 {
+/* .week-schedule:nth-child(even) h3 {
   border-color: var(--secondaryColor);
-}
+} */
 
 /* Schedule Event List */
 .week-schedule--event-list {
@@ -1000,7 +1064,8 @@ a:hover {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  background-color: var(--accentColor);
+  background-color: var(--primaryColor);
+  background-color: var(--primaryColor);
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
@@ -1017,9 +1082,14 @@ a:hover {
   align-items: center;
 }
 
-.week-schedule--event-list :nth-child(even) .event-list--dateBlock {
-  background-color: var(--primaryColor);
-  border-left-color: var(--primaryColor)
+/* .week-schedule--event-list :nth-child(even) .event-list--dateBlock {
+  background-color: var(--purple);
+  border-left-color: var(--purple);
+} */
+
+.week-block :nth-child(even) .week-schedule--event-list .event-list--dateBlock {
+  background-color: var(--purple);
+  border-left-color: var(--purple);
 }
 
 .event-list--day {
@@ -1047,8 +1117,8 @@ a:hover {
 }
 
 .week-schedule--event-list .event-list--register {
-  background-color: var(--secondaryColor);
-  border-color: var(--secondaryColor);
+  background-color: var(--accentColor);
+  border-color: var(--accentColor);
 }
 
 .week-schedule--event-list .event-list--register:hover,
@@ -1218,6 +1288,16 @@ a:hover {
   gap: 1.5em 1em;
 }
 
+.gracias-chapters .gracias-grid--chapters a img {
+  /* filter: grayscale(); */
+  max-height: 70px;
+}
+
+.gracias-grid--chapters a img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
 .gracias-grid--chapters a:focus {
   outline: 0;
 }
@@ -1225,6 +1305,8 @@ a:hover {
 .gracias-grid--chapters a:focus img {
   border-bottom: solid 3px var(--secondaryColor); 
   padding-bottom: 1em;
+  -webkit-filter: none;
+          filter: none;
 }
 
 #gracias .gracias-sponsors h2::before {
