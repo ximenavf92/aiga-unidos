@@ -1,0 +1,40 @@
+{
+    "events": [
+        {
+            "day": "Tues",
+            "fecha": "9/15",
+            "title": "Virtual Block Party, Kickoff Event",
+            "time": "7:30 PM EST",
+            "chapter": "AIGA Unidos",
+            "speakers": "AIGA Unidos Founders",
+            "link": "#"
+        },
+        {
+            "day": "Wed",
+            "fecha": "9/16",
+            "title": "Instagram Live: Design Future Now",
+            "time": "1:00 PM EST",
+            "chapter": "AIGA National",
+            "speakers": "Reina Castellanos, Dio Jensen, and Ximena Vila Ferral",
+            "link": "https://www.instagram.com/aigadesign/channel/"
+        },
+        {
+            "day": "Thu",
+            "fecha": "9/17",
+            "title": "Charla with Walter Suhr",
+            "time": "7:30 PM EST",
+            "chapter": "AIGA Houston",
+            "speakers": "Walter Suhr",
+            "link": "https://houston.aiga.org/upcoming-events/"
+        },
+        {
+            "day": "Sat",
+            "fecha": "9/19",
+            "title": "How Our Personal Projects Can Inspire and Lead to Client Work",
+            "time": "12:30 AM EST",
+            "chapter": "AIGA San Antonio",
+            "speakers": "Sindy Ehtel",
+            "link": "https://sanantonio.aiga.org/upcoming-events/"
+        }
+    ]
+}

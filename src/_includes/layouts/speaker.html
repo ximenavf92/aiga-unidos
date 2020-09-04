@@ -1,0 +1,42 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<section class="section-margin speaker-page">
+    <h1>{{ name }}</h1>
+    <article>
+        <img src="{{ image }}" alt="{{ name }} Headshot">
+      <div class="speaker-content">
+        <ul class="speakers-grid--details">
+            <li class="speakers-grid--details-title">{{ position }}</li>
+            <li class="speakers-grid--details-organization">{{ company }}</li>
+        </ul>
+        <ul class="speakers-grid--social">
+            {% for social in social %}
+            <li>
+                <a href="{{ social.url }}" target="_blank" rel="noopener">
+                    <span class="sr-only">follow {{ firstname }} on {{ social.name }}</span>
+                    <i class="fa fa-{{ social.name }}{{ social.famod }}" aria-hidden="true"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+            {{ content | safe }}
+        </div>
+    </article >
+
+    <ul class="button-list">
+    <li>
+        <a href="/#speakers" class="button">
+            <i class="fa fa-user" aria-hidden="true"></i> 
+            Back to Speakers
+        </a>
+    </li>
+    <li>
+        <a href="/#schedule" class="button">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 
+            View Schedule
+        </a>
+    </li>
+    </ul>
+</section>
+{% endblock %}

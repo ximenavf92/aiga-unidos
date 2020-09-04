@@ -1,16 +1,25 @@
 # Mac Files
 .DS_Store
 _DS_Store
+Thumbs.db
 
 # NPM
 node_modules/
 package-lock.json
 
 # Build Folder
-_site/
+dist
 
 # Local Netlify folder
 .netlify
 
 # Local VScode Settings
 .vscode
+
+# Misc
+*.log
+npm-debug.*
+*.scssc
+*.swp
+.env
+.cache

@@ -1,0 +1,75 @@
+{ 
+    "heading": "¡Unidos hacemos la diferencia!",
+    "description": "HHT2020 has been made possible by the hard work and collaboration of the following volunteer chapters.",
+    "chapters": [
+        {
+            "name": "AIGA San Antonio",
+            "logo": "assets/images/chapters/aiga-sanantonio.svg",
+            "url": "https://sanantonio.aiga.org/"
+        },
+        {
+            "name": "AIGA Orlando",
+            "logo": "assets/images/chapters/aiga-orlando.svg",
+            "url": "https://orlando.aiga.org/"
+        },
+        {
+            "name": "AIGA Atlanta",
+            "logo": "assets/images/chapters/aiga-atlanta.svg",
+            "url": "https://atlanta.aiga.org/"
+        },
+        {
+            "name": "AIGA Dallas Fort Worth",
+            "logo": "assets/images/chapters/aiga-dfw.svg",
+            "url": "https://dallasftworth.aiga.org/"
+        },
+        {
+            "name": "AIGA Houston",
+            "logo": "assets/images/chapters/aiga-houston.svg",
+            "url": "https://houston.aiga.org/"
+        },
+        {
+            "name": "AIGA Detroit",
+            "logo": "assets/images/chapters/aiga-detroit.svg",
+            "url": "https://detroit.aiga.org/"
+        },
+        {
+            "name": "AIGA Austin",
+            "logo": "assets/images/chapters/aiga-austin.svg",
+            "url": "https://austin.aiga.org/"
+        },
+        {
+            "name": "AIGA Jacksonville",
+            "logo": "assets/images/chapters/aiga-jacksonville.svg",
+            "url": "https://jacksonville.aiga.org/"
+        },
+        {
+            "name": "AIGA Connecticut",
+            "logo": "assets/images/chapters/aiga-ct.svg",
+            "url": "https://connecticut.aiga.org/"
+        },
+        {
+            "name": "AIGA Saint Louis",
+            "logo": "assets/images/chapters/aiga-stlouis.svg",
+            "url": "https://stlouis.aiga.org/"
+        },
+        {
+            "name": "AIGA Miami",
+            "logo": "assets/images/chapters/aiga-miami.svg",
+            "url": "https://miami.aiga.org/"
+        },
+        {
+            "name": "AIGA Kansas City",
+            "logo": "assets/images/chapters/aiga-kc.svg",
+            "url": "https://kc.aiga.org/"
+        }
+    ],
+    "sponsorHeading": "¡Muchas Gracias!",
+    "sponsorDescription": "A special thank you to our sponsors.",
+    "sponsors": [
+        {
+            "name": "Typecraft",
+            "logo": "assets/images/sponsors/typecraft.svg",
+            "url": "http://typecraft.com/"
+        }
+    ]
+}

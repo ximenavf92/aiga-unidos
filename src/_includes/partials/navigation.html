@@ -1,0 +1,18 @@
+<a class="skip-main" href="#main">Skip to Main Content</a>
+<header class="header-main">
+    <h1>
+        <a href="#hero">
+            <span class="sr-only">{{ site.name }}</span>
+            <img src="{{ site.logo }}" alt="" width="250px" height="104">
+        </a>
+    </h1>
+    <nav class="nav-main" aria-label="Primary">
+        <ul>
+        {% for navitems in navigation.navitems %}
+            <li class="{{ navitems.class }}">
+                <a href="{{ navitems.url }}" {{ helpers.getLinkActiveState(navitems.url, page.url) | safe }}>{{ navitems.text }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </nav>
+</header>

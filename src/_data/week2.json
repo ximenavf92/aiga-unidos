@@ -1,0 +1,40 @@
+{
+    "events": [
+        {
+            "day": "Tues",
+            "fecha": "9/22",
+            "title": "Inclusive Design at the Intersection of Fashion and Health",
+            "time": "7:30 PM EST",
+            "chapter": "AIGA Miami",
+            "speakers": "Camila Chiriboga",
+            "link": "https://miami.aiga.org/upcoming-events/"
+        },
+        {
+            "day": "Wed",
+            "fecha": "9/23",
+            "title": "Stories that a Product Tells",
+            "time": "7:30 PM EST",
+            "chapter": "AIGA Houston",
+            "speakers": "Martin Tibabuzo",
+            "link": "https://houston.aiga.org/upcoming-events/"
+        },
+        {
+            "day": "Thu",
+            "fecha": "9/24",
+            "title": "Tu los Tacos, y yo la Soda: The Power of Teamwork",
+            "time": "7:30 PM EST",
+            "chapter": "AIGA San Antonio",
+            "speakers": "Eduardo Juarez & Arturo Guzmán",
+            "link": "https://sanantonio.aiga.org/upcoming-events/"
+        },
+        {
+            "day": "Sat",
+            "fecha": "9/26",
+            "title": "Viral Songs: Inspiration in Times of Covid",
+            "time": "7:30 PM EST",
+            "chapter": "AIGA Orlando",
+            "speakers": "Leo Aether",
+            "link": "https://orlando.aiga.org/upcoming-events/"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157556615-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157556615-2');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title | safe }} | Hispanic Heritage Talks</title>
+    <base href="/">
+    <meta name="description" content="An AIGA multi-chapter collaboration, creating a space to empower and celebrate the lives, work, stories, and needs of creatives with a Latinx and Hispanic cultural heritage.">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" id="font-awesome-css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=5.4.1" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b4431fc7c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+{% include "partials/navigation.html" %}
+    <main tabindex="-1" id="main">
+        {% block content %}
+        {% endblock %}
+    </main>
+{% include "partials/footer.html" %}
+<script src="/src/assets/js/scripts.js" type="text/js"></script>
+</body>
+</html>
