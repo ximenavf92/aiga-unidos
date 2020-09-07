@@ -15,6 +15,9 @@ social:
   - name: 'facebook'
     famod: ''
     url: 'https://www.facebook.com/LeoAetherMusic/'
+  - name: 'link'
+    famod: ''
+    url: 'https://leoaether.com/'
 ---
 
 The Andes, the backbone of the Americas, is the source of life and light for an entire continent – and this is the energy that flows through Leo Aether’s music.
