@@ -17,4 +17,4 @@ social:
     url: 'http://eddiethecreative.com/'
 ---
 
-Eduardo Juarez is a creative designer and currently an art director at AMG. Obsessed with design, he works on anything TV, print, digital, web and motion design. He is a blend of engine oil, street art and sneakers. He has worked with clients like H-E-B, The McNay Art Museum, Alamo Colleges, Valero Alamo Bowl and Freetail Brewing.
+Eduardo Juarez is a creative designer and currently an Art Director at AMG. Experience in TV, print, digital, web, and motion design. Has worked with clients such as H-E-B, The McNay Art Museum, Alamo Colleges, Valero Alamo Bowl, and Freetail Brewing Company. Fluent in both English and Spanish and overall just trying to make his 15-year-old self proud.
