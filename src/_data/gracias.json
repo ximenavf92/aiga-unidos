@@ -48,6 +48,11 @@
             "url": "https://connecticut.aiga.org/"
         },
         {
+            "name": "AIGA Gainesville",
+            "logo": "assets/images/chapters/aiga-gainesville.svg",
+            "url": "https://gainesville.aiga.org/"
+        },
+        {
             "name": "AIGA Saint Louis",
             "logo": "assets/images/chapters/aiga-stlouis.svg",
             "url": "https://stlouis.aiga.org/"
