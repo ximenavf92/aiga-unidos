@@ -26,7 +26,8 @@
     <div class="hht20--info">
         <h2>{{ hht20.heading }}</h2>
         <p class="hht20--info-dates"><i class="fa fa-calendar" aria-hidden="true"></i> {{ hht20.date }}</p>
-        <p class="hht20--info-description">{{ hht20.description }}</p>
+        <h3>{{ hht20.subheading }}</h3>
+        <div class="hht20--info-description">{{ hht20.description | safe }}</div>
         <ul class="button-list">
             <li><a href="{{ hht20.buttons[0].url }}" class="button">{{ hht20.buttons[0].text }}</a></li>
             <li><a href="{{ hht20.buttons[1].url }}" class="button">{{ hht20.buttons[1].text }}</a></li>

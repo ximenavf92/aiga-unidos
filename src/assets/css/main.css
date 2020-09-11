@@ -615,13 +615,22 @@ a:hover {
   background-size: contain;
   width: 100%;
   height: 45px;
-  margin-bottom: .35em;
+  margin-bottom: .25em;
 }
 
 .hht20--info-dates {
   margin: 1.5em 0 .5em;
   /* color: var(--primaryColor); */
   font-weight: 600;
+}
+
+#hispanic-heritage-talks h3 {
+  margin: .5em 0 .25em;
+  color: var(--primaryColor);
+}
+
+.hht20--info-description em {
+  font-weight: 800;
 }
 
 .hht20--info-dates i {
@@ -634,8 +643,8 @@ a:hover {
   justify-content: center;
   align-content: center;
   align-items: center;
-  justify-content: start;
-  gap: 1.5em;
+  justify-content: center;
+  gap: 2em;
   /* grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr); */
 }

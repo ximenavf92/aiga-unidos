@@ -10,7 +10,9 @@ hero:
 hht20:
   heading: 'Hispanic Heritage Talks'
   date: 'September 15th - October 15th'
-  description: 'AIGA Unidos'' first ever event is a series of talks called Hispanic Heritage Talks, which will take place during Hispanic Heritage Month. It is a series of virtual talks featuring Latinx and Hispanic creatives from different backgrounds and disciplines. ¡Acompañanos!'
+  subheading: 'AIGA Unidos was created for Everyone!'
+  description: '<p>We highlight Hispanic and Latinx creatives, so we can share their stories and work with the world—that’s you! Our first ever event is a series of talks called Hispanic Heritage Talks, which will take place during Hispanic Heritage Month. It is a series of virtual talks featuring Latinx and Hispanic creatives from different backgrounds and disciplines. ¡Acompañanos!</p>
+  <p>Join the AIGA Unidos familia, and hear from all the amazing creatives our heritage has to offer. From us to you, with love and a little sazón... who are we kidding? A lot of sazón! <em>We are Unidos for Everyone!</em></p>'
   images:
    - image: 'assets/images/unidos-meet-1.jpg'
      imgalt: ''
