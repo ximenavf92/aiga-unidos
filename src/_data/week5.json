@@ -20,6 +20,15 @@
         },
         {
             "day": "Wed",
+            "fecha": "9/14",
+            "title": "Instagram Live: Design Future Now",
+            "time": "1:00 PM EST",
+            "chapter": "AIGA National",
+            "speakers": "Natacha Poggio",
+            "link": "https://www.instagram.com/aigadesign/channel/"
+        },
+        {
+            "day": "Wed",
             "fecha": "10/14",
             "title": "Education Panel",
             "time": "7:30 PM EST",
