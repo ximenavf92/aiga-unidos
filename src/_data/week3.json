@@ -1,15 +1,6 @@
 {
     "events": [
         {
-            "day": "Tue",
-            "fecha": "9/29",
-            "title": "TBD",
-            "time": "7:30 PM EST",
-            "chapter": "AIGA Detroit",
-            "speakers": "Cesar Rodriguez",
-            "link": "https://detroit.aiga.org/upcoming-events/"
-        },
-        {
             "day": "Wed",
             "fecha": "9/30",
             "title": "Activism Panel",
