@@ -93,31 +93,8 @@
             <h3>{{ weekHeading }}</h3>
                 <ul class="week-schedule--event-list">
                     {% for events in week1.events %}
-                    <li>
-                        <div class="event-list--dateBlock">
-                            <p class="event-list--day">{{ events.day }}</p>
-                            <p class="event-list--date">{{ events.fecha }}</p>
-                        </div>
-                        <div class="event-list--event">
-                            <h4 class="event-list--event-title">{{ events.title }}</h4>
-                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
-                            
-                        </div>
-                        <time class="event-list--time">{{ events.time }}</time>
-                        <p class="event-list--chapter">{{ events.chapter }}</p>
-                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
-                    </li>
+                    {% include "partials/event-item.html" %}
                     {% endfor %}
-                        <!-- <li>
-                            <div class="event-list--dateBlock">
-                                <p class="event-list--day">Tues</p>
-                                <p class="event-list--date">9/15</p>
-                            </div>
-                            <h4>Block Party</h4>
-                            <time class="event-list--time">7:30 EST</time>
-                            <p class="event-list--chapter">{{ events.chapter }}</p>
-                            <a href="{{ events.link }}" class="button event-list--register">Register</a>
-                        </li> -->
                 </ul>
         </article>
         
@@ -127,20 +104,7 @@
             <h3>{{ weekHeading }}</h3>
                 <ul class="week-schedule--event-list">
                     {% for events in week2.events %}
-                    <li>
-                        <div class="event-list--dateBlock">
-                            <p class="event-list--day">{{ events.day }}</p>
-                            <p class="event-list--date">{{ events.fecha }}</p>
-                        </div>
-                        <div class="event-list--event">
-                            <h4 class="event-list--event-title">{{ events.title }}</h4>
-                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
-                            
-                        </div>
-                        <time class="event-list--time">{{ events.time }}</time>
-                        <p class="event-list--chapter">{{ events.chapter }}</p>
-                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
-                    </li>
+                    {% include "partials/event-item.html" %}
                     {% endfor %}
                 </ul>
         </article>
@@ -151,20 +115,7 @@
             <h3>{{ weekHeading }}</h3>
                 <ul class="week-schedule--event-list">
                     {% for events in week3.events %}
-                    <li>
-                        <div class="event-list--dateBlock">
-                            <p class="event-list--day">{{ events.day }}</p>
-                            <p class="event-list--date">{{ events.fecha }}</p>
-                        </div>
-                        <div class="event-list--event">
-                            <h4 class="event-list--event-title">{{ events.title }}</h4>
-                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
-                            
-                        </div>
-                        <time class="event-list--time">{{ events.time }}</time>
-                        <p class="event-list--chapter">{{ events.chapter }}</p>
-                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
-                    </li>
+                    {% include "partials/event-item.html" %}
                     {% endfor %}
                 </ul>
         </article>
@@ -175,20 +126,7 @@
             <h3>{{ weekHeading }}</h3>
                 <ul class="week-schedule--event-list">
                     {% for events in week4.events %}
-                    <li>
-                        <div class="event-list--dateBlock">
-                            <p class="event-list--day">{{ events.day }}</p>
-                            <p class="event-list--date">{{ events.fecha }}</p>
-                        </div>
-                        <div class="event-list--event">
-                            <h4 class="event-list--event-title">{{ events.title }}</h4>
-                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
-                            
-                        </div>
-                        <time class="event-list--time">{{ events.time }}</time>
-                        <p class="event-list--chapter">{{ events.chapter }}</p>
-                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
-                    </li>
+                    {% include "partials/event-item.html" %}
                     {% endfor %}
                 </ul>
         </article>
@@ -199,20 +137,7 @@
             <h3>{{ weekHeading }}</h3>
                 <ul class="week-schedule--event-list">
                     {% for events in week5.events %}
-                    <li>
-                        <div class="event-list--dateBlock">
-                            <p class="event-list--day">{{ events.day }}</p>
-                            <p class="event-list--date">{{ events.fecha }}</p>
-                        </div>
-                        <div class="event-list--event">
-                            <h4 class="event-list--event-title">{{ events.title }}</h4>
-                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
-                            
-                        </div>
-                        <time class="event-list--time">{{ events.time }}</time>
-                        <p class="event-list--chapter">{{ events.chapter }}</p>
-                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
-                    </li>
+                    {% include "partials/event-item.html" %}
                     {% endfor %}
                 </ul>
         </article>
