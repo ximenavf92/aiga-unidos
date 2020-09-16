@@ -2,8 +2,8 @@
 name: 'Victor Davila'
 title: "Victor Davila"
 firstname: 'Victor'
-position: 'Illustrator, Designer, Educator'
-company: 'University of Central Florida'
+position: 'Illustrator, Designer, Educator | President Emeritus'
+company: 'University of Central Florida | AIGA Orlando'
 image: 'assets/images/speakers/victor-davila.jpeg'
 social:
   - name: 'instagram'
