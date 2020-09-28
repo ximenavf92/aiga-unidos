@@ -2,7 +2,7 @@
 name: 'Yocelyn Riojas'
 title: "Yocelyn Riojas"
 firstname: 'Yocelyn'
-position: 'Creative Director & Managing Partne'
+position: 'Creative Director & Managing Partner'
 company: 'SparkNerds'
 image: 'assets/images/speakers/yocelyn-riojas.jpg'
 social:

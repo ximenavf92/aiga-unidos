@@ -2,7 +2,7 @@
 name: 'Natacha Poggio'
 title: 'Natacha Poggio'
 firstname: 'Natacha'
-position: 'Assistant Professor,'
+position: 'Assistant Professor, Graphic Design'
 company: 'University of Houston-Downtown | AIGA Houston'
 image: 'assets/images/speakers/natacha-poggio.jpg'
 social:
