@@ -1,6 +1,6 @@
 ---
-name: 'Maria de Mater O'Neill'
-title: 'Maria de Mater O'Neill'
+name: 'Maria de Mater O''Neill'
+title: 'Maria de Mater O''Neill'
 firstname: 'Maria'
 position: 'Creative Director'
 company: 'Rubberband Design Studio'
