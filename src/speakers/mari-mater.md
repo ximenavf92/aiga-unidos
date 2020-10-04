@@ -1,7 +1,7 @@
 ---
-name: 'Mari Mater'
-title: 'Mari Mater'
-firstname: 'Mari'
+name: 'Maria de Mater O'Neill'
+title: 'Maria de Mater O'Neill'
+firstname: 'Maria'
 position: 'Creative Director'
 company: 'Rubberband Design Studio'
 image: 'assets/images/speakers/mari-mater.jpg'
