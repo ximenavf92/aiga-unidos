@@ -1,0 +1,17 @@
+<li>
+    <div class="event-list--dateBlock">
+        <p class="event-list--day">{{ events.day }}</p>
+        <p class="event-list--date">{{ events.fecha }}</p>
+    </div>
+    <div class="event-list--details">
+        <div class="event-list--event">
+            <h4 class="event-list--event-title">{{ events.title }}</h4>
+            <p class="event-list--event-speaker">{{ events.speakers }}</p>
+        </div>
+        <div class="event-list--time-chapter">
+            <time class="event-list--time">{{ events.time }}</time>
+            <p class="event-list--chapter">{{ events.chapter }}</p>
+        </div>
+        <a href="{{ events.link }}" class="button event-list--register">Register</a>
+    </div>
+</li>
