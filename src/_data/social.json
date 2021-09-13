@@ -1,14 +1,19 @@
 { 
     "socials": [
         {
-            "name": "facebook",
-            "famod": "-square",
-            "url": "https://www.facebook.com/AIGAUnidos/"
-        },
-        {
             "name": "instagram",
             "famod": "",
             "url": "https://www.instagram.com/AIGAUnidos/"
+        },
+        {
+            "name": "youtube",
+            "famod": "",
+            "url": "https://www.youtube.com/channel/UC2yrBExogDeOqJP4V-1s1JQ"
+        },
+        {
+            "name": "facebook",
+            "famod": "-square",
+            "url": "https://www.facebook.com/AIGAUnidos/"
         },
         {
             "name": "linkedin",
