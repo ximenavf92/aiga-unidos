@@ -27,8 +27,8 @@ hht21:
      url: '#speakers'
    - text: 'View Schedule'
      url: '#schedule'
-   - text: '2020 Events'
-     url: '/unidos-2020/' 
+   - text: '2020 Talks'
+     url: 'https://www.youtube.com/channel/UC2yrBExogDeOqJP4V-1s1JQ' 
 ---
 
 {% block content %}
