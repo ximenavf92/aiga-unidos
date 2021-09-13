@@ -2,34 +2,13 @@
 
 {% block content %}
 
-<section class="section-margin" id="hispanic-heritage-talks" style="margin-top: 12em;">
-    <div class="radio">
-        <img src="assets/images/hhr2021-radio.png" alt="" width="650" class="radio-img">
-    </div>
-    <div class="hht20--info">
-        <h2>{{ hht21.heading }}</h2>
-        <p class="hht20--info-dates"><i class="fa fa-calendar" aria-hidden="true"></i> {{ hht21.date }}</p>
-        <h3>{{ hht21.subheading }}</h3>
-        <div class="hht20--info-description">{{ hht21.description | safe }}</div>
-        <ul class="button-list">
-            {% for button in hht21.buttons %}
-                <li><a href="{{ button.url }}" class="button">{{ button.text }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
-    <!-- <div class="hht20--images">
-        {% for image in hht21.images %}
-            <img src="{{ image.image }}" alt="" class="hht20--img{{ image.imgNum }}">
-        {% endfor %}
-    </div> -->
-</section>
-
-<!-- <section class="section-margin unidos">
-     <article class="mission-social">
+<section class="hero" id="hero">
+    <img src="{{ hero.image }}" alt="{{ hero.imgalt }}" width="800">
+    <article class="mission-social">
         <h2>{{ hero.tagline }}</h2>
         <p class="mission-en">{{ hero.missionen }}</p>
         <p class="mission-es">{{ hero.missiones | safe }}</p>
-        
+        <!-- Social Block -->
         <ul class="social-links">
             {% for socials in social.socials %}
             <li>
@@ -39,32 +18,50 @@
                 </a>
             </li>
             {% endfor %}
-        </ul>
+        </ul><!-- End Social Block -->
     </article>
-</section> -->
+</section>
+
+<section class="section-margin" id="hispanic-heritage-talks">
+    <div class="hht20--info">
+        <h2>{{ hht20.heading }}</h2>
+        <p class="hht20--info-dates"><i class="fa fa-calendar" aria-hidden="true"></i> {{ hht20.date }}</p>
+        <h3>{{ hht20.subheading }}</h3>
+        <div class="hht20--info-description">{{ hht20.description | safe }}</div>
+        <ul class="button-list">
+            <li><a href="{{ hht20.buttons[0].url }}" class="button">{{ hht20.buttons[0].text }}</a></li>
+            <li><a href="{{ hht20.buttons[1].url }}" class="button">{{ hht20.buttons[1].text }}</a></li>
+        </ul>
+    </div>
+    <div class="hht20--images">
+        <img src="{{ hht20.images[0].image }}" alt="" class="hht20--img1">
+        <img src="{{ hht20.images[1].image }}" alt="" class="hht20--img2">
+        <img src="{{ hht20.images[2].image }}" alt="" class="hht20--img3">
+    </div>
+</section>
 
 <section class="section-margin" id="speakers">
     <h2>Speakers</h2>
     <ul class="speakers-grid">
-        {% for speakers2021 in collections.speakers2021 %}
+        {% for speakers in collections.speakers2020 %}
         <li>
             <article class="speakers-grid--card">
                 <figure class="speakers-grid--card-headshot">
-                    <a href="{{ speakers2021.url }}">
-                        <img src="{{ speakers2021.data.image }}" alt="{{ speakers2021.data.name }}'s black and white headshot" width="276" height="276">
+                    <a href="{{ speakers.url }}">
+                        <img src="{{ speakers.data.image }}" alt="{{ speakers.data.name }}'s black and white headshot" width="276" height="276">
                     </a>
                 </figure>
                 <div class="speakers-grid--info">
-                    <h3 class="speakers-grid--name"><a href="{{ speakers2021.url }}">{{ speakers2021.data.name }}</a></h3>
+                    <h3 class="speakers-grid--name"><a href="{{ speakers.url }}">{{ speakers.data.name }}</a></h3>
                     <ul class="speakers-grid--details">
-                        <li class="speakers-grid--details-title">{{ speakers2021.data.position }}</li>
-                        <li class="speakers-grid--details-organization">{{ speakers2021.data.company }}</li>
+                        <li class="speakers-grid--details-title">{{ speakers.data.position }}</li>
+                        <li class="speakers-grid--details-organization">{{ speakers.data.company }}</li>
                     </ul>
                     <ul class="speakers-grid--social">
-                        {% for social in speakers2021.data.social %}
+                        {% for social in speakers.data.social %}
                         <li>
                             <a href="{{ social.url }}" target="_blank" rel="noopener">
-                                <span class="sr-only">follow {{ speakers2021.data.firstname }} on {{ social.name }}</span>
+                                <span class="sr-only">follow {{ speakers.data.firstname }} on {{ social.name }}</span>
                                 <i class="fa fa-{{ social.name }}{{ social.famod }}" aria-hidden="true"></i>
                             </a>
                         </li>
@@ -108,7 +105,7 @@
                         </div>
                         <time class="event-list--time">{{ events.time }}</time>
                         <p class="event-list--chapter">{{ events.chapter }}</p>
-                        <a href="{{ events.link }}" class="button event-list--register">{{ events.buttonText }}</a>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
                     </li>
                     {% endfor %}
                         <!-- <li>
@@ -119,7 +116,7 @@
                             <h4>Block Party</h4>
                             <time class="event-list--time">7:30 EST</time>
                             <p class="event-list--chapter">{{ events.chapter }}</p>
-                            <a href="{{ events.link }}" class="button event-list--register">{{ events.buttonText }}</a>
+                            <a href="{{ events.link }}" class="button event-list--register">Register</a>
                         </li> -->
                 </ul>
         </article>
@@ -142,7 +139,7 @@
                         </div>
                         <time class="event-list--time">{{ events.time }}</time>
                         <p class="event-list--chapter">{{ events.chapter }}</p>
-                        <a href="{{ events.link }}" class="button event-list--register">{{ events.buttonText }}</a>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -166,7 +163,7 @@
                         </div>
                         <time class="event-list--time">{{ events.time }}</time>
                         <p class="event-list--chapter">{{ events.chapter }}</p>
-                        <a href="{{ events.link }}" class="button event-list--register">{{ events.buttonText }}</a>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -190,7 +187,7 @@
                         </div>
                         <time class="event-list--time">{{ events.time }}</time>
                         <p class="event-list--chapter">{{ events.chapter }}</p>
-                        <a href="{{ events.link }}" class="button event-list--register">{{ events.buttonText }}</a>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -214,7 +211,7 @@
                         </div>
                         <time class="event-list--time">{{ events.time }}</time>
                         <p class="event-list--chapter">{{ events.chapter }}</p>
-                        <a href="{{ events.link }}" class="button event-list--register">{{ events.buttonText }}</a>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -227,38 +224,17 @@
     <div class="gracias-chapters">
         <h2>{{ gracias.heading }}</h2>
         <p class="gracias-description">{{ gracias.description }}</p>
-        <ul class="speakers-grid" style="margin-top: 5em;">
-            {% for volunteers in collections.team2021 %}
+        <ul class="gracias-grid--chapters">
+            {% for chapters in gracias.chapters %}
             <li>
-            <article class="speakers-grid--card">
-                <figure class="speakers-grid--card-headshot">
-                    <a href="{{ volunteers.url }}">
-                        <img src="{{ volunteers.data.image }}" alt="{{ volunteers.data.name }}" width="276" height="276">
-                    </a>
-                </figure>
-                <div class="speakers-grid--info">
-                    <h3 class="speakers-grid--name"><a href="{{ volunteers.url }}">{{ volunteers.data.name }}</a></h3>
-                    <ul class="speakers-grid--details">
-                        <li class="speakers-grid--details-title">{{ volunteers.data.position }}</li>
-                        <li class="speakers-grid--details-organization">{{ volunteers.data.company }}</li>
-                    </ul>
-                    <ul class="speakers-grid--social">
-                        {% for social in volunteers.data.social %}
-                        <li>
-                            <a href="{{ social.url }}" target="_blank" rel="noopener">
-                                <span class="sr-only">follow {{ volunteers.data.firstname }} on {{ social.name }}</span>
-                                <i class="fa fa-{{ social.name }}{{ social.famod }}" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </article>
-        </li>
+                <a href="{{ chapters.url }}" target="_blank" rel="noopener">
+                    <img src="{{ chapters.logo }}" alt="{{ chapters.name }}">
+                </a>
+            </li>
             {% endfor %}
         </ul>
     </div>
-    {# <div class="gracias-sponsors">
+    <div class="gracias-sponsors">
         <h2>{{ gracias.sponsorHeading }}</h2>
         <p class="gracias-description">{{ gracias.sponsorDescription }}</p>
         <ul class="gracias-grid--chapters">
@@ -270,14 +246,14 @@
             </li>
             {% endfor %}
         </ul>
-    </div> #}
+    </div>
 </section>
 
 <section class="section-margin" id="sponsors"></section>
 
 <section class="section-margin" id="get-involved">
     <h2>Get Involved</h2>
-    <form name="get-involved-2021" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+    <form name="get-involved" method="POST" netlify>
         <p class="getinvolved-form--fname">
             <label for="first-name">First Name<br />
                 <input type="text" name="first-name" required /></label>
@@ -294,10 +270,10 @@
             <label for="city"> Where do you live? <em>(city)</em><br />
                 <input type="text" name="city" required /></label>
         </p>
-        <p class="getinvolved-form--message">
+        <!-- <p class="getinvolved-form--message">
             <label for="message">Message<br />
                 <textarea name="message"></textarea></label>
-        </p>
+        </p> -->
         <ul class="getinvolved-form--checkbox">
             <li>
                 <input type="checkbox" id="checkbox1" name="contribute">
@@ -306,10 +282,6 @@
             <li>
                 <input type="checkbox" id="checkbox2" name="updates">
                 <label for="updates">Send me updates</label>
-            </li>
-            <li>
-                <input type="checkbox" id="checkbox3" name="member">
-                <label for="member">I am an AIGA member</label>
             </li>
         </ul>
         <p class="get-involved--submit">

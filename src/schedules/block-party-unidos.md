@@ -1,5 +1,5 @@
 ---
-tags: week1
+tags: week1_2021
 day: 'Tues'
 fecha: '9/15'
 title: 'Block Party, Kickoff Event'
