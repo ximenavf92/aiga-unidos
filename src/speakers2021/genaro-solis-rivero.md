@@ -2,8 +2,8 @@
 name: 'Genaro Solis Rivero'
 title: 'Genaro Solis Rivero'
 firstname: 'Genaro'
-position: 'Master Ideator'
-company: 'Legacy79'
+position: 'Master Ideator | Educator'
+company: 'Legacy79 | Texas State University'
 image: 'assets/images/speakers/2021/genaro-solis-rivero.jpg'
 social:
   - name: 'instagram'
