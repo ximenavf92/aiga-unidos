@@ -7,24 +7,28 @@ hero:
   missiones: 'Una colaboración entre secciones <span>(chapters)</span>, creando un espacio en el cual se pueda empoderar y celebrar las vidas, los trabajos, las historias, y las voces de las personas creativas con herencia cultural Latinx e Hispana.'
   image: 'assets/images/home-image-shape-overlay.png'
   imgalt: 'candid shot of a group of people chatting at a conference'
-hht20:
+hht21:
   heading: 'Hispanic Heritage Talks'
   date: 'September 15th - October 15th'
-  subheading: 'AIGA Unidos was created for Everyone!'
-  description: '<p>We highlight Hispanic and Latinx creatives, so we can share their stories and work with the world—that’s you! Our first ever event is a series of talks called Hispanic Heritage Talks, which will take place during Hispanic Heritage Month. It is a series of virtual talks featuring Latinx and Hispanic creatives from different backgrounds and disciplines. ¡Acompañanos!</p>
-  <p>Join the AIGA Unidos familia, and hear from all the amazing creatives our heritage has to offer. From us to you, with love and a little sazón... who are we kidding? A lot of sazón! <em>We are Unidos for Everyone!</em></p>'
+  subheading: 'We are AIGA Unidos, for Everyone!'
+  description: '<p>Joins us as we highlight Hispanic/Latinx creatives, who will be sharing their stories and work for our second annual Hispanic Heritage Talks. We will be featuring creatives from different backgrounds and disciplines via Instagram lives and Zoom Webinars. <em>¡Acompañanos!</em></p>'
   images:
    - image: 'assets/images/unidos-meet-1.jpg'
      imgalt: ''
+     imgNum: '1'
    - image: 'assets/images/unidos-meet-2.jpg'
      imgalt: ''
+     imgNum: '2'
    - image: 'assets/images/unidos-meet-3.jpg'
      imgalt: ''
+     imgNum: '3'
   buttons:
-   - text: 'Speakers'
+   - text: '2021 Speakers'
      url: '#speakers'
-   - text: 'Schedule'
+   - text: 'View Schedule'
      url: '#schedule'
+   - text: '2020 Talks'
+     url: 'https://www.youtube.com/channel/UC2yrBExogDeOqJP4V-1s1JQ' 
 ---
 
 {% block content %}

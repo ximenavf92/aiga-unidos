@@ -1,0 +1,295 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<section class="hero" id="hero">
+    <img src="{{ hero.image }}" alt="{{ hero.imgalt }}" width="800">
+    <article class="mission-social">
+        <h2>{{ hero.tagline }}</h2>
+        <p class="mission-en">{{ hero.missionen }}</p>
+        <p class="mission-es">{{ hero.missiones | safe }}</p>
+        <!-- Social Block -->
+        <ul class="social-links">
+            {% for socials in social.socials %}
+            <li>
+                <a href="{{ socials.url }}" target="_blank" rel="noopener">
+                    <span class="sr-only">follow us on {{ socials.name }}</span>
+                    <i class="fa fa-{{ socials.name }}{{ socials.famod }}" aria-hidden="true"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul><!-- End Social Block -->
+    </article>
+</section>
+
+<section class="section-margin" id="hispanic-heritage-talks">
+    <div class="hht20--info">
+        <h2>{{ hht20.heading }}</h2>
+        <p class="hht20--info-dates"><i class="fa fa-calendar" aria-hidden="true"></i> {{ hht20.date }}</p>
+        <h3>{{ hht20.subheading }}</h3>
+        <div class="hht20--info-description">{{ hht20.description | safe }}</div>
+        <ul class="button-list">
+            <li><a href="{{ hht20.buttons[0].url }}" class="button">{{ hht20.buttons[0].text }}</a></li>
+            <li><a href="{{ hht20.buttons[1].url }}" class="button">{{ hht20.buttons[1].text }}</a></li>
+        </ul>
+    </div>
+    <div class="hht20--images">
+        <img src="{{ hht20.images[0].image }}" alt="" class="hht20--img1">
+        <img src="{{ hht20.images[1].image }}" alt="" class="hht20--img2">
+        <img src="{{ hht20.images[2].image }}" alt="" class="hht20--img3">
+    </div>
+</section>
+
+<section class="section-margin" id="speakers">
+    <h2>Speakers</h2>
+    <ul class="speakers-grid">
+        {% for speakers in collections.speakers2020 %}
+        <li>
+            <article class="speakers-grid--card">
+                <figure class="speakers-grid--card-headshot">
+                    <a href="{{ speakers.url }}">
+                        <img src="{{ speakers.data.image }}" alt="{{ speakers.data.name }}'s black and white headshot" width="276" height="276">
+                    </a>
+                </figure>
+                <div class="speakers-grid--info">
+                    <h3 class="speakers-grid--name"><a href="{{ speakers.url }}">{{ speakers.data.name }}</a></h3>
+                    <ul class="speakers-grid--details">
+                        <li class="speakers-grid--details-title">{{ speakers.data.position }}</li>
+                        <li class="speakers-grid--details-organization">{{ speakers.data.company }}</li>
+                    </ul>
+                    <ul class="speakers-grid--social">
+                        {% for social in speakers.data.social %}
+                        <li>
+                            <a href="{{ social.url }}" target="_blank" rel="noopener">
+                                <span class="sr-only">follow {{ speakers.data.firstname }} on {{ social.name }}</span>
+                                <i class="fa fa-{{ social.name }}{{ social.famod }}" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </article>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section class="section-margin" id="schedule">
+    <h2>Schedule</h2>
+    <nav class="schedule-nav">
+        <ul>
+        {% for weeks in site.weeks %}
+            <li>
+                <a href="#{{ weeks.link }}">{{ weeks.semana }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </nav>
+
+    <div class="week-block">
+        {% set weekCurrent = 'week1' %}
+        {% set weekHeading = 'Week 1' %}
+        <article id="{{ weekCurrent }}" class="week-schedule">
+            <h3>{{ weekHeading }}</h3>
+                <ul class="week-schedule--event-list">
+                    {% for events in week1_2020.events %}
+                    <li>
+                        <div class="event-list--dateBlock">
+                            <p class="event-list--day">{{ events.day }}</p>
+                            <p class="event-list--date">{{ events.fecha }}</p>
+                        </div>
+                        <div class="event-list--event">
+                            <h4 class="event-list--event-title">{{ events.title }}</h4>
+                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
+                            
+                        </div>
+                        <time class="event-list--time">{{ events.time }}</time>
+                        <p class="event-list--chapter">{{ events.chapter }}</p>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
+                    </li>
+                    {% endfor %}
+                        <!-- <li>
+                            <div class="event-list--dateBlock">
+                                <p class="event-list--day">Tues</p>
+                                <p class="event-list--date">9/15</p>
+                            </div>
+                            <h4>Block Party</h4>
+                            <time class="event-list--time">7:30 EST</time>
+                            <p class="event-list--chapter">{{ events.chapter }}</p>
+                            <a href="{{ events.link }}" class="button event-list--register">Register</a>
+                        </li> -->
+                </ul>
+        </article>
+        
+        {% set weekCurrent = 'week2' %}
+        {% set weekHeading = 'Week 2' %}
+        <article id="{{ weekCurrent }}" class="week-schedule">
+            <h3>{{ weekHeading }}</h3>
+                <ul class="week-schedule--event-list">
+                    {% for events in week2_2020.events %}
+                    <li>
+                        <div class="event-list--dateBlock">
+                            <p class="event-list--day">{{ events.day }}</p>
+                            <p class="event-list--date">{{ events.fecha }}</p>
+                        </div>
+                        <div class="event-list--event">
+                            <h4 class="event-list--event-title">{{ events.title }}</h4>
+                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
+                            
+                        </div>
+                        <time class="event-list--time">{{ events.time }}</time>
+                        <p class="event-list--chapter">{{ events.chapter }}</p>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+        </article>
+    
+        {% set weekCurrent = 'week3' %}
+        {% set weekHeading = 'Week 3' %}
+        <article id="{{ weekCurrent }}" class="week-schedule">
+            <h3>{{ weekHeading }}</h3>
+                <ul class="week-schedule--event-list">
+                    {% for events in week3_2020.events %}
+                    <li>
+                        <div class="event-list--dateBlock">
+                            <p class="event-list--day">{{ events.day }}</p>
+                            <p class="event-list--date">{{ events.fecha }}</p>
+                        </div>
+                        <div class="event-list--event">
+                            <h4 class="event-list--event-title">{{ events.title }}</h4>
+                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
+                            
+                        </div>
+                        <time class="event-list--time">{{ events.time }}</time>
+                        <p class="event-list--chapter">{{ events.chapter }}</p>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+        </article>
+    
+        {% set weekCurrent = 'week4' %}
+        {% set weekHeading = 'Week 4' %}
+        <article id="{{ weekCurrent }}" class="week-schedule">
+            <h3>{{ weekHeading }}</h3>
+                <ul class="week-schedule--event-list">
+                    {% for events in week4_2020.events %}
+                    <li>
+                        <div class="event-list--dateBlock">
+                            <p class="event-list--day">{{ events.day }}</p>
+                            <p class="event-list--date">{{ events.fecha }}</p>
+                        </div>
+                        <div class="event-list--event">
+                            <h4 class="event-list--event-title">{{ events.title }}</h4>
+                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
+                            
+                        </div>
+                        <time class="event-list--time">{{ events.time }}</time>
+                        <p class="event-list--chapter">{{ events.chapter }}</p>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+        </article>
+    
+        {% set weekCurrent = 'week5' %}
+        {% set weekHeading = 'Week 5' %}
+        <article id="{{ weekCurrent }}" class="week-schedule">
+            <h3>{{ weekHeading }}</h3>
+                <ul class="week-schedule--event-list">
+                    {% for events in week5_2020.events %}
+                    <li>
+                        <div class="event-list--dateBlock">
+                            <p class="event-list--day">{{ events.day }}</p>
+                            <p class="event-list--date">{{ events.fecha }}</p>
+                        </div>
+                        <div class="event-list--event">
+                            <h4 class="event-list--event-title">{{ events.title }}</h4>
+                            <p class="event-list--event-speaker">{{ events.speakers }}</p>
+                            
+                        </div>
+                        <time class="event-list--time">{{ events.time }}</time>
+                        <p class="event-list--chapter">{{ events.chapter }}</p>
+                        <a href="{{ events.link }}" class="button event-list--register">Register</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+        </article>
+    </div>
+    
+</section>
+
+<section class="section-margin" id="gracias">
+    <div class="gracias-chapters">
+        <h2>{{ gracias.heading }}</h2>
+        <p class="gracias-description">{{ gracias.description }}</p>
+        <ul class="gracias-grid--chapters">
+            {% for chapters in gracias.chapters %}
+            <li>
+                <a href="{{ chapters.url }}" target="_blank" rel="noopener">
+                    <img src="{{ chapters.logo }}" alt="{{ chapters.name }}">
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="gracias-sponsors">
+        <h2>{{ gracias.sponsorHeading }}</h2>
+        <p class="gracias-description">{{ gracias.sponsorDescription }}</p>
+        <ul class="gracias-grid--chapters">
+            {% for sponsors in gracias.sponsors %}
+            <li>
+                <a href="{{ sponsors.url }}" target="_blank" rel="noopener">
+                    <img src="{{ sponsors.logo }}" alt="{{ sponsors.name }}">
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<section class="section-margin" id="sponsors"></section>
+
+<section class="section-margin" id="get-involved">
+    <h2>Get Involved</h2>
+    <form name="get-involved" method="POST" netlify>
+        <p class="getinvolved-form--fname">
+            <label for="first-name">First Name<br />
+                <input type="text" name="first-name" required /></label>
+        </p>
+        <p class="getinvolved-form--lname">
+            <label for="last-name">Last Name<br />
+                <input type="text" name="last-name" required /></label>
+        </p>
+        <p class="getinvolved-form--email">
+            <label for="email"> Email<br />
+                <input type="email" name="email" required /></label>
+        </p>
+        <p class="getinvolved-form--city">
+            <label for="city"> Where do you live? <em>(city)</em><br />
+                <input type="text" name="city" required /></label>
+        </p>
+        <!-- <p class="getinvolved-form--message">
+            <label for="message">Message<br />
+                <textarea name="message"></textarea></label>
+        </p> -->
+        <ul class="getinvolved-form--checkbox">
+            <li>
+                <input type="checkbox" id="checkbox1" name="contribute">
+                <label for="contribute">I want to contribute</label>
+            </li>
+            <li>
+                <input type="checkbox" id="checkbox2" name="updates">
+                <label for="updates">Send me updates</label>
+            </li>
+        </ul>
+        <p class="get-involved--submit">
+            <button type="submit" class="button buttonPrimary">Let's Talk!</button>
+        </p>
+    </form>
+</section>
+
+{{ content | safe }}
+
+{% endblock %}

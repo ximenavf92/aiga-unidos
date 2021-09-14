@@ -1,40 +1,15 @@
 {
     "events": [
         {
-            "day": "Tues",
-            "fecha": "9/15",
-            "title": "Virtual Block Party, Kickoff Event",
-            "time": "7:30 PM EST",
-            "chapter": "AIGA Unidos",
-            "speakers": "AIGA Unidos Founders",
-            "link": "https://sanantonio.aiga.org/event-internal/hht2020blockparty/"
-        },
-        {
-            "day": "Wed",
-            "fecha": "9/16",
-            "title": "Instagram Live: Design Future Now",
-            "time": "1:00 PM EST",
-            "chapter": "AIGA National",
-            "speakers": "Reina Castellanos, Dio Jensen, and Ximena Vila Ferral",
-            "link": "https://www.instagram.com/aigadesign/channel/"
-        },
-        {
             "day": "Thu",
-            "fecha": "9/17",
-            "title": "Charla with Walter Suhr",
-            "time": "7:30 PM EST",
-            "chapter": "AIGA Houston",
-            "speakers": "Walter Suhr",
-            "link": "https://www.eventbrite.com/e/charla-chat-with-walter-suhr-bandleaderfounder-for-mango-punch-tickets-117917501421"
-        },
-        {
-            "day": "Sat",
-            "fecha": "9/19",
-            "title": "How Our Personal Projects Can Inspire and Lead to Client Work",
-            "time": "2:30 PM EST",
-            "chapter": "AIGA San Antonio",
-            "speakers": "Sindy Ethel",
-            "link": "https://sanantonio.aiga.org/event-internal/aiga-unidos-presents-hispanic-heritage-talks-2020-sindy-ethel/"
+            "fecha": "9/16",
+            "title": "SALUD: Good Health and Design",
+            "description": "Careers of creatives are no longer a straight line. There are many diverse paths a designer can travel. Be sure to join us for an engaging conversation with Cesar Rivera about his career journey. He'll also share his thoughts on the role design plays in public health information, especially during a global pandemic.",
+            "time": "6:30 PM CST",
+            "chapter": "AIGA Unidos",
+            "speakers": "Cesar Rivera",
+            "buttonText": "Register",
+            "link": "https://aiga.zoom.us/webinar/register/WN_jDOmw7rnQWmENwIESRNNdA"
         }
     ]
 }

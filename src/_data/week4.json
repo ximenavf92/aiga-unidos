@@ -2,39 +2,13 @@
     "events": [
         {
             "day": "Tue",
-            "fecha": "10/6",
-            "title": "Art Under DACA",
-            "time": "7:30 PM EST",
-            "chapter": "AIGA Atlanta",
-            "speakers": "Fanesha Fabre",
-            "link": "https://www.eventbrite.com/e/aiga-unidos-presents-hispanic-heritage-talks-2020-fanesha-fabre-tickets-119649586133?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing"
-        },
-        {
-            "day": "Wed",
             "fecha": "10/7",
-            "title": "Designing for the World’s Most Vulnerable Children",
-            "time": "7:30 PM EST",
-            "chapter": "AIGA Houston",
-            "speakers": "Matias Delfino",
-            "link": "https://www.eventbrite.com/e/117920901591"
-        },
-        {
-            "day": "Thu",
-            "fecha": "10/8",
-            "title": "STL Design Week: Branding Bridges at the Intersection of Design, Illustration & Culture",
-            "time": "7:30 PM EST",
-            "chapter": "AIGA St. Louis",
-            "speakers": "Carlos Zamora",
-            "link": "https://www.eventbrite.com/e/aiga-unidos-presents-hispanic-heritage-talks-2020-carlos-zamora-tickets-120447199817"
-        },
-        {
-            "day": "Sat",
-            "fecha": "10/10",
-            "title": "Los Últimos Documentary: Past, Present & Future of Letterpress in Argentina",
-            "time": "6:00 PM EST",
-            "chapter": "AIGA Jacksonville",
-            "speakers": "Pablo Pivetta & Nicolás Rodriguez Fuchs",
-            "link": "https://jacksonville.aiga.org/event/los-ultimos-documentary-past-present-future-of-letterpress-in-argentina/"
+            "title": "Illustración Argentina con Laura Varsky",
+            "time": "12:00 PM CST",
+            "chapter": "AIGA Unidos",
+            "speakers": "Laura Varsky",
+            "buttonText": "View Live",
+            "link": "https://www.instagram.com/aigaunidos/"
         }
     ]
 }
