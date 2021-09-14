@@ -454,7 +454,7 @@ a:hover {
 
 @media (min-width: 1000px) {
   .section-margin {
-    margin: 16rem 8rem 10rem;
+    margin: 12rem 8rem 10rem;
   }
 
   .hero {
@@ -602,7 +602,7 @@ a:hover {
 .radio-img {
   position: relative; 
     top: 1em;
-  width: 350px;
+  width: 300px;
   object-fit: contain;
 }
 
@@ -610,7 +610,7 @@ a:hover {
     .radio-img {
       width: 100%;
       align-self: center;
-        top: 5em;
+        top: 6em;
     }
 }
 
@@ -1590,6 +1590,12 @@ a:hover {
 .getinvolved-form--checkbox li {
   margin: 0 2em 0 0;
   line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .getinvolved-form--checkbox li {
+    margin: 0 0 0 0;
+  }
 }
 
 .getinvolved-form--checkbox input[type="checkbox"] {
