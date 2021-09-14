@@ -452,7 +452,7 @@ a:hover {
   font-size: .85em;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 100px) {
   .section-margin {
     margin: 12rem 8rem 10rem;
   }
@@ -700,7 +700,7 @@ a:hover {
   grid-area: 3 / 1 / 4 / 3;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   #hispanic-heritage-talks {
     grid-template-columns: 2fr 2fr;
     gap: 0 8em;
@@ -1708,7 +1708,7 @@ a:hover {
 
 /* === Speaker Page === */
 .speaker-page {
-  margin-top: -2.5em;
+  margin-top: 8rem;
 }
 
 .speaker-page h1 {
@@ -1738,7 +1738,7 @@ a:hover {
 }
 
 .speaker-page img {
-  width: 100%
+  width: 50%
 }
 
 @media (max-width: 800px) {
@@ -1747,7 +1747,7 @@ a:hover {
 }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .speaker-page {
     margin-top: 8em;
   }
@@ -1767,6 +1767,10 @@ a:hover {
     gap: 4em;
     align-content: center;
     justify-content: center;
+  }
+
+  .speaker-page img {
+    width: 100%
   }
 }
 
