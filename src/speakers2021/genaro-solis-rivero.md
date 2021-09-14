@@ -20,6 +20,6 @@ social:
     url: 'https://www.legacy79.com/'
 ---
 
-Genaro is a passionate award-winning graphic designer and educator. His expertise is helping individuals, cause-based organizations, and businesses to become memorable by telling their stories visually, conceptually, and strategically.
+Genaro Solis Rivero is a passionate award-winning graphic designer and educator. His expertise is helping individuals, cause-based organizations, and businesses to become memorable by telling their stories visually, conceptually, and strategically.
 
 He teaches Communication Design at the School of Art and Design at Texas State University, and he is part of the creative leadership at Legacy79—a branding agency in San Antonio, Texas.

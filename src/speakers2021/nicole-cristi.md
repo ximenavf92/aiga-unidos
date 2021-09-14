@@ -2,7 +2,7 @@
 name: 'Nicole Cristi'
 title: 'Nicole Cristi'
 firstname: 'Nicole'
-position: 'PhD(c) in Anthropology in Material Culture'
+position: 'Researcher in design history and theory'
 company: 'University College of London'
 image: 'assets/images/speakers/2021/nicole-cristi.jpg'
 social:

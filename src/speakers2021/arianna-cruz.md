@@ -4,7 +4,7 @@ title: 'Arianna Cruz'
 firstname: 'Arianna'
 position: 'Director of Marketing + Outreach'
 company: 'Big Brothers Big Sisters of Central Indiana'
-image: 'assets/images/speakers/2021/arianna-cruz.jpg'
+image: 'assets/images/speakers/placeholder2.svg'
 social:
   - name: 'instagram'
     url: 'https://www.instagram.com/ariannnnacruz/'

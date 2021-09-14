@@ -943,6 +943,22 @@ a:hover {
     gap: 3em;
   }
 
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .team-grid h3 {
+    font-size: 1.5em;
+  }
+
+  .team-grid .speakers-grid--details-title {
+    font-size: 1em;
+  }
+
+  .team-grid .speakers-grid--details-organization {
+    font-size: .9em;
+  }
+
   .speakers-grid--card {
     text-align: left;
     display: grid;

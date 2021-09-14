@@ -20,4 +20,4 @@ social:
     url: 'https://www.facebook.com/javiera.manzi'
 ---
 
-Arturo Guzman is a graphic designer living in San Antonio, Texas currently working at Outlook Amusements. Arturo specializes in digital design, animation and branding. Arturo has a strong belief that the sum is bigger than the individual; in a world of opportunities, it’s exciting to see how design can help shape the future.
+Javiera Manzi is a sociologist and archivist at the University of Chile. Independent researcher and curator on the intersections between art/politics, visual culture, and social movements. Manzi is co-author of the book Resistencia Gráfica (LOM, 2016). As a researcher and feminist activist, she has published her work in books and magazines on political graphics, the feminist movement, and Chile's October Revolution. She is currently the coordinator of Red Conceptualismos del Sur.

@@ -2,8 +2,8 @@
 name: 'Laura Varsky'
 title: 'Laura Varsky'
 firstname: 'Laura'
-position: 'Illustrator Designer Educator'
-company: 'Outlook Amusements'
+position: 'Illustrator | Designer | Educator'
+company: ''
 image: 'assets/images/speakers/2021/laura-varsky.jpg'
 social:
   - name: 'instagram'
