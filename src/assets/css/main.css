@@ -452,7 +452,7 @@ a:hover {
   font-size: .85em;
 }
 
-@media (min-width: 100px) {
+@media (min-width: 1000px) {
   .section-margin {
     margin: 12rem 8rem 10rem;
   }
